@@ -9,18 +9,22 @@ All the projects related to the first group of 1401 are here
 
 *clone*
 ```
-clone => git clone https://github.com/onlineabedini/practical_group_1401_1.git
+git clone https://github.com/onlineabedini/practical_group_1401_1.git
 ```
 
 *pull*
 ```
-pull => git pull
+git pull
 ```
 
 *push*
 ```
-add to stage => git add .
-commit => git commit -m " what did you do? "
+git add .
+```
+```
+git commit -m " what did you do? "
+```
+```
 git push
 ```
 
