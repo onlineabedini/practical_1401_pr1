@@ -11,7 +11,7 @@ module.exports = class application {
 
     server_config() {
         app.listen(port, ()=>{
-            console.log(' - - - - - - - - - server is running! success!! http://localhost:8080/')
+            console.log(' - - - - - - - - server is running! success!! http://localhost:8080/')
         })
     }
 
