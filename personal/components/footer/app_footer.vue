@@ -93,17 +93,17 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-5">
-            <div class="p-3">
+          <div class="col">
+            <div class="p-4">
               <!-- copy right section -->
-              <div class="">
-                <div class="text-white">
-                  <p class="text-center">
-                    <strong>
-                      تمامی حقوق این سایت متعلق به علیرضا عابدینی می‌باشد.
-                    </strong>
-                  </p>
-                </div>
+              <div
+                class="text-white"
+                style="font-family: Verdana; font-size: small"
+              >
+                <p>
+                  طراحی شده توسط تیم مطالعاتی آی آر نود / تمامی حقوق این وبسایت
+                  محفوظ و کپی برداری ممنوع است.
+                </p>
               </div>
             </div>
           </div>
