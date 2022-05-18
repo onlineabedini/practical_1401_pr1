@@ -1,7 +1,11 @@
 <template>
-    <div class="border border-dark p-5 m-1">
-        <!-- محتوای هدر -->
+<div>
+    <div class="bg-primary p-5 text-center text-white">
+        <h1>
+        هدر سایت
+        </h1>
     </div>
+</div>   
 </template>
 
 <script>
@@ -10,6 +14,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
