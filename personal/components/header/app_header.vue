@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <div
       class="
@@ -29,6 +30,16 @@
     </div>
   </div>
 </template> 
+=======
+<div>
+    <div class="bg-primary p-5 text-center text-white">
+        <h1>
+        هدر سایت
+        </h1>
+    </div>
+</div>   
+</template>
+>>>>>>> bb16762375429803207cf38bb8ec87b1d5f9b78f
 
 <script>
 export default {
@@ -37,9 +48,13 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 h1 {
   letter-spacing: 15px;
   font-size: 3.5rem;
   font-family: Verdana, Tahoma, sans-serif;
 }
+=======
+
+>>>>>>> bb16762375429803207cf38bb8ec87b1d5f9b78f
 </style>
