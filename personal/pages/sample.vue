@@ -1,12 +1,11 @@
 <template>
-  <div class="container p-5 card border">
+  <div class="container p-5 cards border">
     <div class="row">
-      <div class="col-3" v-for="card in cardsList" :key="card.cardTitle">
-        <cardSample
-          :cardImage="card.cardImage"
+      <div class="col-3"
+       v-for="card in cardsList" :key="card.cardTitle">
+        <cardSample :cardImage="card.cardImage"
           :cardTitle="card.cardTitle"
-          :decription="card.decription"
-        ></cardSample>
+          :decription="card.decription"></cardSample>
       </div>
     </div>
   </div>

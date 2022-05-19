@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="card">
     <div>
-      <img :src="cardImage" class="card-img img-size mx-4" alt="image" />
+      <img :src="cardImage" class="card-img-top rounded p-1 absolute" alt="image" />
     </div>
 
     <div>
-      <h6 class="card-title title-align">
+      <h6 class="card-title">
         {{ cardTitle }}
       </h6>
     </div>
