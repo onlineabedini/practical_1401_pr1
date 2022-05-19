@@ -16,12 +16,13 @@
         <div class="row">
           <div class="col">
             <div class="navbar-nav" style="font-family: Verdana">
-              <a class="nav-item nav-link active" href="#">خانه</a>
-              <a class="nav-item nav-link active" href="#">نمونه کارها</a>
-              <a class="nav-item nav-link active" href="#">تماس با من</a>
-              <a class="nav-item nav-link active" href="#">وبلاگ</a>
-              <a class="nav-item nav-link active" href="#">درباره من</a>
-              <a class="nav-item nav-link active" href="#">مهارت‌های من</a>
+              <ul class="header-nav nav">
+                <li class="nav-item" v-for="link in links" :key="link.name">
+                  <nuxt-link class="header-nav-link nav-link" :to="link.url">
+                    {{ link.name }}
+                  </nuxt-link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -33,6 +34,36 @@
 <script>
 export default {
   name: "app_header",
+  data() {
+    return {
+      links: {
+        link1: {
+          name: "خانه",
+          url: "/",
+        },
+        link2: {
+          name: "نمونه کارها",
+          url: "/sample",
+        },
+        link3: {
+          name: "تماس با من",
+          url: "/contact",
+        },
+        link4: {
+          name: "وبلاگ",
+          url: "/blog",
+        },
+        link5: {
+          name: "درباره من",
+          url: "/about",
+        },
+        link6: {
+          name: "مهارت‌های من",
+          url: "/skills",
+        },
+      },
+    };
+  },
 };
 </script>
 
