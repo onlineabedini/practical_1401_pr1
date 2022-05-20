@@ -1,56 +1,61 @@
 <template>
-<div>
-  <div class=p-5></div>
-    
-    
-    
-    <p class="text-center font-weight-normal h3">ارتباط با من</p>
-    <div class=p-3></div>
-
-    <div class="input-group mb-3 p-1 ">
-  <div class="input-group-prepend p-3 ">
-    
-  </div>
-  <input type="text" class="form-control" placeholder=" نام و نام خانوادگی را وارد کنید" >
+  <div>
+    <div>
+      <!-- title -->
+      <div class="text-center pt-5">
+        <h4>ارتباط با من</h4>
+      </div>
+      <!-- line -->
+      <hr />
+      <!-- form -->
+      <div class="form-container py-5">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">نام و نام خانوادگی </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="نام و نام خانوادگی"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">ایمیل</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="ایمیل"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">توضیحات</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              placeholder="توضیبحات خود را وارد کنید"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">ارسال</button>
+        </form>
+      </div>
     </div>
-    <div class=p-2></div>
-   <div class="input-group mb-3 p-1">
-  <div class="input-group-prepend p-3">
-    
   </div>
-  <input type="text" class="form-control" placeholder="ایمیل را وارد کنید " >
-
-    </div>
-    <div class=p-2></div>
-    <div class="input-group p-1 ">
-  <div class="input-group-prepend p-3">
-    
-  </div>
-  <input type="text" class="form-control" placeholder="پیام را وارد کنید " >
-  
-</div>
-
-    <div class="p-3"></div>
-    
-    <button type="button" class="btn btn-primary d-grid gap-1 col-1 mx-auto ">ارسال</button>
-
-
-
-
-    <div class=" p-5 "></div>
-    
-    
-      <div ></div> 
-        
-        
-        
-
-        </div>
-
-    
-    
-
-
-
-
 </template>
+
+<style scoped>
+.form-container {
+  padding-inline: 300px;
+}
+</style>
+
+
