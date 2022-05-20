@@ -1,31 +1,26 @@
 <template>
-  <div class="card">
-    <div>
-      <img :src="cardImage" class="card-img-top rounded p-1 absolute" alt="image" />
-    </div>
-
-    <div>
-      <h6 class="card-title">
-        {{ cardTitle }}
-      </h6>
-    </div>
-
-    <div>
-      <p class="card-text">
-        {{ decription }}
-      </p>
+  <div class="card mb-1">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <img :src="cardImage" class="img-fluid rounded-start p-1" alt="image" />
+      </div>
+      <div class="col-md-8 text-center" >
+        <div class="card-body">
+          <h6 class="card-title">
+            {{ cardTitle }}
+          </h6>
+          <p class="card-text">
+            {{ description }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "cardSample",
-  props: [
-    "cardImage",
-    "cardTitle",
-    "decription",
-  ],
+  props: ["cardImage", "cardTitle", "description"],
 };
 </script>
 
