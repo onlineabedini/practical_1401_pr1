@@ -1,6 +1,9 @@
 <template>
 <div>
 <cardBlog></cardBlog>
+<cardBlog></cardBlog>
+<cardBlog></cardBlog>
+<cardBlog></cardBlog>
 </div>
 </template>
 
