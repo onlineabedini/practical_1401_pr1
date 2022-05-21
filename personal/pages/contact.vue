@@ -52,6 +52,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout() {
+    return "contact";
+  },
+};
+</script>
+
 <style scoped>
 .form-container {
   padding-inline: 300px;

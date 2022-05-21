@@ -87,5 +87,12 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  layout() {
+    return "index";
+  },
+};
+</script>
 <style scoped>
 </style>

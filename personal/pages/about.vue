@@ -10,8 +10,11 @@ export default {
   components: {
     aboutUs,
   },
+  layout () {
+    return 'aboutUs';
+  }
 };
-</scriptNpm>
+
 
 <style>
 </style>

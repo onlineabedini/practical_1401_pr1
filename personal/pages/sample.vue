@@ -1,6 +1,6 @@
 <template>
-  <div class="p-5 cards border" >
-    <div class=" text-center ">
+  <div class="p-5 cards border">
+    <div class="text-center">
       <h3>
         <hr />
         نوشته‌های مرا در اینستاگرم، توییتر وشبکه‌های اجتماعی دیگر دنبال کنید.
@@ -23,6 +23,9 @@
 <script>
 import cardSample from "@/components/cards/cardSample.vue";
 export default {
+  layout() {
+    return "sample";
+  },
   components: {
     cardSample,
   },
