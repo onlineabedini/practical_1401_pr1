@@ -1,10 +1,17 @@
 <template>
-  
+  <div>
+      <aboutUs></aboutUs>
+  </div>
 </template>
 
 <script>
-export default {};
-</script>
+import aboutUs from "~/components/about/aboutUs.vue";
+export default {
+  components: {
+    aboutUs,
+  },
+};
+</scriptNpm>
 
 <style>
 </style>
