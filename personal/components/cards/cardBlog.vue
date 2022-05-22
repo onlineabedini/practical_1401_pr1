@@ -11,15 +11,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "cardBlog",
-};
-</script>
-
-<style scoped>
-.g1{
-  color: red;
-}
-</style>
