@@ -1,6 +1,6 @@
 <template>
   <div>
-      <aboutUs></aboutUs>
+    <aboutUs></aboutUs>
   </div>
 </template>
 
@@ -10,11 +10,9 @@ export default {
   components: {
     aboutUs,
   },
-  layout () {
-    return 'aboutUs';
-  }
+  layout() {
+    return "aboutUs";
+  },
 };
 
-
-<style>
-</style>
+<style></style>;
