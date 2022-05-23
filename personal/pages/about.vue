@@ -1,20 +1,7 @@
 <template>
-<<<<<<< Updated upstream
   <div>
-    <aboutUs></aboutUs>
+    <about-us></about-us>
   </div>
-=======
-<div>
-    <div>
-        <h4>درباره ی من </h4>
-        
-</div>
-
-
-
-
-  
->>>>>>> Stashed changes
 </template>
 
 <script>
