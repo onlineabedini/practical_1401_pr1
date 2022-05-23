@@ -1,6 +1,6 @@
 const  express = require('express');
 const app = express();
-const port = 8080;
+const port = 2020;
 const api_router = require('./api')
 
 module.exports = class application {
@@ -11,7 +11,7 @@ module.exports = class application {
 
     server_config() {
         app.listen(port, ()=>{
-            console.log(' - - - - - - - - server is running! success!! http://localhost:8080/')
+            console.log(' - - - - - - - - server is running! success!! http://localhost:2020/')
         })
     }
 
