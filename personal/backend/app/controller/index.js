@@ -1,8 +1,13 @@
 // conteroller file
+
+const article_list = require('./../data/article')
+const sample_list = require('./../data/sample') 
 class article_controller {
     // 
     // get all articles
-    get_all_articles() {}
+    get_all_articles(req, res) {
+        res.json(article_list)
+    }
 
     // get article by id
     get_article_by_id() {}
@@ -20,7 +25,9 @@ class article_controller {
 class sample_controller{
     // 
     // get all samples
-    get_all_samples() {}
+    get_all_samples(req, res) {
+        res.json(sample_list)
+    }  
 
     // get sample by id
     get_sample_by_id() {}
@@ -36,6 +43,6 @@ class sample_controller{
 }
 
 module.exports = {
-    article_controller,
-    sample_controller
+    article_controller: new article_controller,
+    sample_controller : new sample_controller
 }

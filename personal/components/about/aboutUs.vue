@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="p-5 text-center">
+     
+     
+   <div class="p-5 text-center">
+     
       <h1 class="mb-3">درباره ی من</h1>
       <p class="title fw-bold border border-1 shadow-sm w-50">
         در باره ی من در این صفحه مطالعه کن
@@ -19,6 +22,11 @@
       </p>
     </div>
   </div>
+  
+    
+ 
+      
+ 
 </template>
 
 <script>
