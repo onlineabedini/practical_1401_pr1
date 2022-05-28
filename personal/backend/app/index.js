@@ -2,10 +2,12 @@ const  express = require('express');
 const app = express();
 const port = 2020;
 const api_router = require('./api')
+const cors = require('cors');
 
 module.exports = class application {
     constructor() {
         this.server_config()
+        this.other_config()
         this.api_config()
     }
 
@@ -15,11 +17,11 @@ module.exports = class application {
         })
     }
 
-    api_config() {
-        app.use('/api', api_router)
+    other_config() {
+        app.use(cors());
     }
 
-    other_config() {
-        // 
+    api_config() {
+        app.use('/api', api_router)
     }
 }
