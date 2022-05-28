@@ -10,6 +10,8 @@ api_router.get('/', (req, res)=>{
     })
 })
 api_router.get('/sample', (req, res) => controller.sample_controller.get_all_samples(req, res))
+api_router.get('/sample/:id', (req, res) => controller.sample_controller.get_sample_by_id(req, res))
 api_router.get('/article', (req, res)=> controller.article_controller.get_all_articles(req, res))
+api_router.get('/article/:id', (req, res)=> controller.article_controller.get_article_by_id(req, res))
 
 module.exports = api_router;
