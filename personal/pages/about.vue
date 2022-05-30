@@ -1,15 +1,11 @@
 <template>
   <div>
-    <about-us></about-us>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsam!
   </div>
 </template>
 
 <script>
-import aboutUs from "~/components/about/aboutUs.vue";
 export default {
-  components: {
-    aboutUs,
-  },
   layout() {
     return "aboutUs";
   },
