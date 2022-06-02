@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="text-center">
-
       <h1>درباره من</h1>
       <h5>
-        درباره من در این صفخحه مطالعه کن
+        درباره من در این صفحه مطالعه کن
       </h5>
+      <hr>
       <p>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
@@ -21,14 +21,9 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  layout() {
-    return "aboutUs";
-  },
-};
-
-<style>
-
+<style scoped>
+hr{
+  height: 2px;
+  background-color: black;
+}
 </style>;
