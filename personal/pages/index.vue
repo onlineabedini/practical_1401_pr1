@@ -129,28 +129,28 @@ export default {
   data() {
     return {
       article: [],
-      // cardsList: {
-      //   card1: {
-      //     cardImage: "img/1.jpg",
-      //     cardTitle: "Card title 1",
-      //     description: "example description 1",
-      //   },
-      //   card2: {
-      //     cardImage: "img/2.jpg",
-      //     cardTitle: "Card title 2",
-      //     description: "example description 2",
-      //   },
-      //   card3: {
-      //     cardImage: "img/3.jpg",
-      //     cardTitle: "Card title 3",
-      //     description: "example description 3",
-      //   },
-      //   card4: {
-      //     cardImage: "img/3.jpg",
-      //     cardTitle: "Card title 4",
-      //     description: "example description 4",
-      //   },
-      // },
+      cardsList: {
+        card1: {
+          cardImage: "img/1.jpg",
+          cardTitle: "Card title 1",
+          description: "example description 1",
+        },
+        card2: {
+          cardImage: "img/2.jpg",
+          cardTitle: "Card title 2",
+          description: "example description 2",
+        },
+        card3: {
+          cardImage: "img/3.jpg",
+          cardTitle: "Card title 3",
+          description: "example description 3",
+        },
+        card4: {
+          cardImage: "img/3.jpg",
+          cardTitle: "Card title 4",
+          description: "example description 4",
+        },
+      },
     };
   },
 
