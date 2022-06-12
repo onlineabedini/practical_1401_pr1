@@ -125,8 +125,19 @@ export default {
     cardSample,
     cardBlog,
   },
+  head: {
+    title: 'Home page',
+    meta: [
+      {
+        hid: 'صفحه اصلی',
+        name: 'home',
+        content: 'Home page description'
+      }
+    ],
+  },
+  
 
-  data() {
+  data () {
     return {
       article: [],
       cardsList: {

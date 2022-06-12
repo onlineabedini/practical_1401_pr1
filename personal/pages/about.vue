@@ -21,6 +21,20 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  head: {
+    title: 'About page',
+    meta: [
+      {
+        hid: 'درباره من',
+        name: 'about me',
+        content: 'در این صفحه در مورد من مطالعه کنید و به صورت خلاصه با من اشنا بشید.  همراه ما باشید'
+      }
+    ],
+  }
+}
+</script>
 <style scoped>
 hr{
   height: 2px;

@@ -57,6 +57,16 @@ export default {
   layout() {
     return "contact";
   },
+  head: {
+    title: 'Contact page',
+    meta: [
+      {
+        hid: 'تماس با ما',
+        name: 'contact',
+        content: ' .برای ارتباط با ما در این صفحه ثبت نام نمایید'
+      }
+    ],
+  }
 };
 </script>
 
