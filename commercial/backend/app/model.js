@@ -1,1 +1,0 @@
-// model for article and sample
