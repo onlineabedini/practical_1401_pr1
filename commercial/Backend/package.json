@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "commercial backend project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --ignore jtelb_data.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mohammad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jtelb": "^1.1.3",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19"
+  }
+}
