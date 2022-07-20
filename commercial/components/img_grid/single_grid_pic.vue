@@ -1,20 +1,16 @@
 <template>
-  <div class="row">
+  <div class="row m-0">
     <div class="col">
-      <div>
-        <h5 class="card-title p-3 mt-5">
-          {{ item.cardTitle }}
-        </h5>
-      </div>
-      <div>
-        <h4 class="p-3">
-          {{ item.text }}
-        </h4>
-      </div>
+      <img :src="item.cardImage" class="img-fluid d-table" alt="img" />
     </div>
+    <div class="col mt-4">
+      <h5 class="text-center">
+        {{ item.cardTitle }}
+      </h5>
 
-    <div class="col d-flex m-auto">
-      <img :src="item.cardImage" class="img-fluid" alt="" />
+      <h4 class="text-center">
+        {{ item.text }}
+      </h4>
     </div>
   </div>
 </template>
