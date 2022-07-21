@@ -1,23 +1,25 @@
 <template>
   <div class="row m-0">
-    <div class="col">
+    <div class="col" v-if="img_position == 'top'">
       <img :src="item.cardImage" class="img-fluid d-table" alt="img" />
     </div>
     <div class="col mt-4">
-      <h5 class="text-center">
+      <h5 class="text-center text-secondary">
         {{ item.cardTitle }}
       </h5>
-
       <h4 class="text-center">
         {{ item.text }}
       </h4>
+    </div>
+    <div class="col" v-if="img_position == 'left'">
+      <img :src="item.cardImage" class="img-fluid d-table" alt="img" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["item"],
+  props: ["item", "img_position"],
   name: "single_grid_pic",
 };
 </script>
