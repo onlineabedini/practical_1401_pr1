@@ -1,41 +1,44 @@
 <template>
   <div class="row m-5 p-5">
-    <div class="col-md-9 p-1">
+    <div class="col-md-8 p-1">
       <!-- col1 -->
       <div class="row ">
-        <div class="col-md-3 p-1 ">
+        <div class="col-md-4 p-1 ">
           <div class="a1">
             <single_grid_pic
               :item="items[0]"
-              class="d-table p-5"
+              img_position="top"
+              class="d-table p-4"
             ></single_grid_pic>
           </div>
         </div>
-        <div class="col-md-9 p-1 ">
+        <div class="col-md-8 p-1 ">
           <div class="b1">
-            <single_grid_pic :item="items[1]" class="p-2 "></single_grid_pic>
-            <div class="btn rounded-pill btn-light d-grid col-3 mx-auto">
+            <single_grid_pic :item="items[1]" img_position="left" class="p-2 "></single_grid_pic>
+            <div class="btn rounded-pill btn-light d-grid col-md-3 ">
               مشاهده و خرید
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-9 p-1">
+        <div class="col-md-8 p-1">
           <div class="c1">
             <single_grid_pic
               :item="items[2]"
+              img_position="left"
               class="d-flex justify-content-center"
             ></single_grid_pic>
-            <div class="btn rounded-pill btn-light d-grid col-3 mx-auto">
+            <div class="btn rounded-pill btn-light d-grid col-md-3 ">
               مشاهده و خرید
             </div>
           </div>
         </div>
-        <div class="col col-md-3 p-1">
+        <div class="col col-md-4 p-1">
           <div class="d1">
             <single_grid_pic
               :item="items[3]"
+              img_position="top"
               class="d-table p-5"
             ></single_grid_pic>
           </div>
@@ -44,10 +47,10 @@
     </div>
 
     <!-- col2 -->
-    <div class="col-md-3 p-2">
+    <div class="col-md-4 p-2">
       <div class="f1">
-        <single_grid_pic :item="items[4]" class="d-table p-5"></single_grid_pic>
-        <div class="btn rounded-pill btn-light d-grid col-4 mx-auto">
+        <single_grid_pic :item="items[4]" img_position="left" class="d-table p-5"></single_grid_pic>
+        <div class="btn rounded-pill btn-light d-grid col-md-4 ">
           مشاهده و خرید
         </div>
       </div>
