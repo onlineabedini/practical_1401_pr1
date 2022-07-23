@@ -1,0 +1,142 @@
+[
+  {
+    "name": "checkout",
+    "path": "/checkout",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\checkout.vue",
+    "chunkName": "pages/checkout",
+    "_name": "_70fa4c3a"
+  },
+  {
+    "name": "panel",
+    "path": "/panel",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\index.vue",
+    "chunkName": "pages/panel/index",
+    "_name": "_49eba3c2"
+  },
+  {
+    "name": "product",
+    "path": "/product",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\index.vue",
+    "chunkName": "pages/product/index",
+    "_name": "_ca26ee12"
+  },
+  {
+    "name": "about_us-about_irnode",
+    "path": "/about_us/about_irnode",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\about_irnode.vue",
+    "chunkName": "pages/about_us/about_irnode",
+    "_name": "_66cdaa21"
+  },
+  {
+    "name": "about_us-come_work_with_us",
+    "path": "/about_us/come_work_with_us",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\come_work_with_us.vue",
+    "chunkName": "pages/about_us/come_work_with_us",
+    "_name": "_73b28ee0"
+  },
+  {
+    "name": "about_us-contact_us",
+    "path": "/about_us/contact_us",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\contact_us.vue",
+    "chunkName": "pages/about_us/contact_us",
+    "_name": "_2704c0a1"
+  },
+  {
+    "name": "about_us-Survey",
+    "path": "/about_us/Survey",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\Survey.vue",
+    "chunkName": "pages/about_us/Survey",
+    "_name": "_466f187e"
+  },
+  {
+    "name": "about_us-terms",
+    "path": "/about_us/terms",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\terms.vue",
+    "chunkName": "pages/about_us/terms",
+    "_name": "_3fb923b3"
+  },
+  {
+    "name": "panel-product",
+    "path": "/panel/product",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\product\\\\index.vue",
+    "chunkName": "pages/panel/product/index",
+    "_name": "_3390bf7a"
+  },
+  {
+    "name": "panel-profile",
+    "path": "/panel/profile",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\profile\\\\index.vue",
+    "chunkName": "pages/panel/profile/index",
+    "_name": "_1a88e96e"
+  },
+  {
+    "name": "panel-tickets",
+    "path": "/panel/tickets",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\index.vue",
+    "chunkName": "pages/panel/tickets/index",
+    "_name": "_9455e96a"
+  },
+  {
+    "name": "panel-user",
+    "path": "/panel/user",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\user\\\\index.vue",
+    "chunkName": "pages/panel/user/index",
+    "_name": "_49b67d97"
+  },
+  {
+    "name": "panel-tickets-send",
+    "path": "/panel/tickets/send",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\send.vue",
+    "chunkName": "pages/panel/tickets/send",
+    "_name": "_01bf15c2"
+  },
+  {
+    "name": "panel-product-update-id",
+    "path": "/panel/product/update/:id?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\product\\\\update\\\\_id.vue",
+    "chunkName": "pages/panel/product/update/_id",
+    "_name": "_29224c42"
+  },
+  {
+    "name": "panel-tickets-answer-id",
+    "path": "/panel/tickets/answer/:id?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\answer\\\\_id.vue",
+    "chunkName": "pages/panel/tickets/answer/_id",
+    "_name": "_795b4df5"
+  },
+  {
+    "name": "panel-user-update-id",
+    "path": "/panel/user/update/:id?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\user\\\\update\\\\_id.vue",
+    "chunkName": "pages/panel/user/update/_id",
+    "_name": "_da5a4ad4"
+  },
+  {
+    "name": "product-category-id",
+    "path": "/product/category/:id?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\category\\\\_id.vue",
+    "chunkName": "pages/product/category/_id",
+    "_name": "_9e1b73be"
+  },
+  {
+    "name": "product-search_result-value",
+    "path": "/product/search_result/:value?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\search_result\\\\_value.vue",
+    "chunkName": "pages/product/search_result/_value",
+    "_name": "_758f2aaa"
+  },
+  {
+    "name": "product-single_product-id",
+    "path": "/product/single_product/:id?",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\single_product\\\\_id.vue",
+    "chunkName": "pages/product/single_product/_id",
+    "_name": "_40006ea7"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "F:\\\\آموزشی\\\\irnode project1\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_015f3ee4"
+  }
+]
