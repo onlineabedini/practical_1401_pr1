@@ -56,11 +56,11 @@
   "CommerceComponentsSuggestedGridSingleSuggestCard": {
     "description": "Auto imported from components/commerce_components/suggested_grid/single_suggest_card.vue"
   },
-  "MenuPanelMenu": {
-    "description": "Auto imported from components/menu/panel_menu/index.vue"
-  },
   "MenuMainMenu": {
     "description": "Auto imported from components/menu/main_menu/index.vue"
+  },
+  "MenuPanelMenu": {
+    "description": "Auto imported from components/menu/panel_menu/index.vue"
   },
   "CommerceComponentsProductsMangeManageForm": {
     "description": "Auto imported from components/commerce_components/products_mange/manage_form/index.vue"

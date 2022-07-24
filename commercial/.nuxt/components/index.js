@@ -19,8 +19,8 @@ export { default as CommerceComponentsSingleProductAddToCartComponent } from '..
 export { default as CommerceComponentsSingleProductInforamtionCard } from '../../components/commerce_components/single_product/inforamtion_card.vue'
 export { default as CommerceComponentsSuggestedGrid } from '../../components/commerce_components/suggested_grid/index.vue'
 export { default as CommerceComponentsSuggestedGridSingleSuggestCard } from '../../components/commerce_components/suggested_grid/single_suggest_card.vue'
-export { default as MenuPanelMenu } from '../../components/menu/panel_menu/index.vue'
 export { default as MenuMainMenu } from '../../components/menu/main_menu/index.vue'
+export { default as MenuPanelMenu } from '../../components/menu/panel_menu/index.vue'
 export { default as CommerceComponentsProductsMangeManageForm } from '../../components/commerce_components/products_mange/manage_form/index.vue'
 export { default as CommerceComponentsProductsMangeProductList } from '../../components/commerce_components/products_mange/product_list/index.vue'
 export { default as CommerceComponentsProductsMangeProductListSingleProductRow } from '../../components/commerce_components/products_mange/product_list/single_product_row.vue'
@@ -44,8 +44,8 @@ export const LazyCommerceComponentsSingleProductAddToCartComponent = import('../
 export const LazyCommerceComponentsSingleProductInforamtionCard = import('../../components/commerce_components/single_product/inforamtion_card.vue' /* webpackChunkName: "components/commerce-components-single-product-inforamtion-card" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommerceComponentsSuggestedGrid = import('../../components/commerce_components/suggested_grid/index.vue' /* webpackChunkName: "components/commerce-components-suggested-grid" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommerceComponentsSuggestedGridSingleSuggestCard = import('../../components/commerce_components/suggested_grid/single_suggest_card.vue' /* webpackChunkName: "components/commerce-components-suggested-grid-single-suggest-card" */).then(c => wrapFunctional(c.default || c))
-export const LazyMenuPanelMenu = import('../../components/menu/panel_menu/index.vue' /* webpackChunkName: "components/menu-panel-menu" */).then(c => wrapFunctional(c.default || c))
 export const LazyMenuMainMenu = import('../../components/menu/main_menu/index.vue' /* webpackChunkName: "components/menu-main-menu" */).then(c => wrapFunctional(c.default || c))
+export const LazyMenuPanelMenu = import('../../components/menu/panel_menu/index.vue' /* webpackChunkName: "components/menu-panel-menu" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommerceComponentsProductsMangeManageForm = import('../../components/commerce_components/products_mange/manage_form/index.vue' /* webpackChunkName: "components/commerce-components-products-mange-manage-form" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommerceComponentsProductsMangeProductList = import('../../components/commerce_components/products_mange/product_list/index.vue' /* webpackChunkName: "components/commerce-components-products-mange-product-list" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommerceComponentsProductsMangeProductListSingleProductRow = import('../../components/commerce_components/products_mange/product_list/single_product_row.vue' /* webpackChunkName: "components/commerce-components-products-mange-product-list-single-product-row" */).then(c => wrapFunctional(c.default || c))
