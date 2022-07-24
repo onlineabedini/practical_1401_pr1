@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "front": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "backend" : "nodemon backend",
+    "jtelb" : "nodemon backend/bot.js --ignore jtelb_data.json"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",

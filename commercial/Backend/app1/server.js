@@ -2,30 +2,36 @@
 const express = require('express');
 const app = express();
 const port = 8080;
-const api_router = require('./api')
+const api_router = require('./restful/api')
 const mongoose = require('mongoose');
+const routes = require('./MVC/routes')
 
 module.exports = class application {
     constructor() {
         this.server_config()
-        // config mongodb
-        this.api_config()
+        this.config_mongodb()
+        this.resful_config()
+        this.MVC_config()
     }
 
-    server_config() {
-        app.listen(port, () => {
+    async server_config() {
+        await app.listen(port, () => {
             console.log('app1 is running on http://localhost:8080/')
         })
     }
 
-    // config mongodb
-
-    api_config() {
-        // route for without api request
-        app.use('/api', api_router)
-        app.use('/', (req, res)=>{
-            res.json(' redirect to front application ')
+    async config_mongodb() {
+        await mongoose.connect('mongodb://localhost:27017/irnode_commercial').then(() => {
+            console.log('database config success')
         })
+    }
+
+    async resful_config() {
+        await app.use('/api', api_router)
+    }
+
+    async MVC_config() {
+        await app.use('/', routes)
     }
 
     // ----------------------------- task1
