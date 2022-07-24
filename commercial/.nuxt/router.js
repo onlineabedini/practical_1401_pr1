@@ -4,26 +4,26 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _70fa4c3a = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages/checkout" */))
-const _49eba3c2 = () => interopDefault(import('..\\pages\\panel\\index.vue' /* webpackChunkName: "pages/panel/index" */))
-const _ca26ee12 = () => interopDefault(import('..\\pages\\product\\index.vue' /* webpackChunkName: "pages/product/index" */))
-const _66cdaa21 = () => interopDefault(import('..\\pages\\about_us\\about_irnode.vue' /* webpackChunkName: "pages/about_us/about_irnode" */))
-const _73b28ee0 = () => interopDefault(import('..\\pages\\about_us\\come_work_with_us.vue' /* webpackChunkName: "pages/about_us/come_work_with_us" */))
-const _2704c0a1 = () => interopDefault(import('..\\pages\\about_us\\contact_us.vue' /* webpackChunkName: "pages/about_us/contact_us" */))
-const _466f187e = () => interopDefault(import('..\\pages\\about_us\\Survey.vue' /* webpackChunkName: "pages/about_us/Survey" */))
-const _3fb923b3 = () => interopDefault(import('..\\pages\\about_us\\terms.vue' /* webpackChunkName: "pages/about_us/terms" */))
-const _3390bf7a = () => interopDefault(import('..\\pages\\panel\\product\\index.vue' /* webpackChunkName: "pages/panel/product/index" */))
-const _1a88e96e = () => interopDefault(import('..\\pages\\panel\\profile\\index.vue' /* webpackChunkName: "pages/panel/profile/index" */))
-const _9455e96a = () => interopDefault(import('..\\pages\\panel\\tickets\\index.vue' /* webpackChunkName: "pages/panel/tickets/index" */))
-const _49b67d97 = () => interopDefault(import('..\\pages\\panel\\user\\index.vue' /* webpackChunkName: "pages/panel/user/index" */))
-const _01bf15c2 = () => interopDefault(import('..\\pages\\panel\\tickets\\send.vue' /* webpackChunkName: "pages/panel/tickets/send" */))
-const _29224c42 = () => interopDefault(import('..\\pages\\panel\\product\\update\\_id.vue' /* webpackChunkName: "pages/panel/product/update/_id" */))
-const _795b4df5 = () => interopDefault(import('..\\pages\\panel\\tickets\\answer\\_id.vue' /* webpackChunkName: "pages/panel/tickets/answer/_id" */))
-const _da5a4ad4 = () => interopDefault(import('..\\pages\\panel\\user\\update\\_id.vue' /* webpackChunkName: "pages/panel/user/update/_id" */))
-const _9e1b73be = () => interopDefault(import('..\\pages\\product\\category\\_id.vue' /* webpackChunkName: "pages/product/category/_id" */))
-const _758f2aaa = () => interopDefault(import('..\\pages\\product\\search_result\\_value.vue' /* webpackChunkName: "pages/product/search_result/_value" */))
-const _40006ea7 = () => interopDefault(import('..\\pages\\product\\single_product\\_id.vue' /* webpackChunkName: "pages/product/single_product/_id" */))
-const _015f3ee4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _30add309 = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages/checkout" */))
+const _63d12b11 = () => interopDefault(import('..\\pages\\panel\\index.vue' /* webpackChunkName: "pages/panel/index" */))
+const _5ce50ef4 = () => interopDefault(import('..\\pages\\product\\index.vue' /* webpackChunkName: "pages/product/index" */))
+const _996ccaa0 = () => interopDefault(import('..\\pages\\about_us\\about_irnode.vue' /* webpackChunkName: "pages/about_us/about_irnode" */))
+const _e4b46d3e = () => interopDefault(import('..\\pages\\about_us\\come_work_with_us.vue' /* webpackChunkName: "pages/about_us/come_work_with_us" */))
+const _639188f0 = () => interopDefault(import('..\\pages\\about_us\\contact_us.vue' /* webpackChunkName: "pages/about_us/contact_us" */))
+const _5892604d = () => interopDefault(import('..\\pages\\about_us\\Survey.vue' /* webpackChunkName: "pages/about_us/Survey" */))
+const _4593b3f8 = () => interopDefault(import('..\\pages\\about_us\\terms.vue' /* webpackChunkName: "pages/about_us/terms" */))
+const _3b43e1d4 = () => interopDefault(import('..\\pages\\panel\\product\\index.vue' /* webpackChunkName: "pages/panel/product/index" */))
+const _47c7ccda = () => interopDefault(import('..\\pages\\panel\\profile\\index.vue' /* webpackChunkName: "pages/panel/profile/index" */))
+const _0ae14cdc = () => interopDefault(import('..\\pages\\panel\\tickets\\index.vue' /* webpackChunkName: "pages/panel/tickets/index" */))
+const _60270da6 = () => interopDefault(import('..\\pages\\panel\\user\\index.vue' /* webpackChunkName: "pages/panel/user/index" */))
+const _3bad3d6e = () => interopDefault(import('..\\pages\\panel\\tickets\\send.vue' /* webpackChunkName: "pages/panel/tickets/send" */))
+const _1ebd45da = () => interopDefault(import('..\\pages\\panel\\product\\update\\_id.vue' /* webpackChunkName: "pages/panel/product/update/_id" */))
+const _40da5ec6 = () => interopDefault(import('..\\pages\\panel\\tickets\\answer\\_id.vue' /* webpackChunkName: "pages/panel/tickets/answer/_id" */))
+const _9fd63936 = () => interopDefault(import('..\\pages\\panel\\user\\update\\_id.vue' /* webpackChunkName: "pages/panel/user/update/_id" */))
+const _052392a0 = () => interopDefault(import('..\\pages\\product\\category\\_id.vue' /* webpackChunkName: "pages/product/category/_id" */))
+const _60fe5c3a = () => interopDefault(import('..\\pages\\product\\search_result\\_value.vue' /* webpackChunkName: "pages/product/search_result/_value" */))
+const _686377f6 = () => interopDefault(import('..\\pages\\product\\single_product\\_id.vue' /* webpackChunkName: "pages/product/single_product/_id" */))
+const _e4e837c2 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -38,83 +38,83 @@ export const routerOptions = {
 
   routes: [{
     path: "/checkout",
-    component: _70fa4c3a,
+    component: _30add309,
     name: "checkout"
   }, {
     path: "/panel",
-    component: _49eba3c2,
+    component: _63d12b11,
     name: "panel"
   }, {
     path: "/product",
-    component: _ca26ee12,
+    component: _5ce50ef4,
     name: "product"
   }, {
     path: "/about_us/about_irnode",
-    component: _66cdaa21,
+    component: _996ccaa0,
     name: "about_us-about_irnode"
   }, {
     path: "/about_us/come_work_with_us",
-    component: _73b28ee0,
+    component: _e4b46d3e,
     name: "about_us-come_work_with_us"
   }, {
     path: "/about_us/contact_us",
-    component: _2704c0a1,
+    component: _639188f0,
     name: "about_us-contact_us"
   }, {
     path: "/about_us/Survey",
-    component: _466f187e,
+    component: _5892604d,
     name: "about_us-Survey"
   }, {
     path: "/about_us/terms",
-    component: _3fb923b3,
+    component: _4593b3f8,
     name: "about_us-terms"
   }, {
     path: "/panel/product",
-    component: _3390bf7a,
+    component: _3b43e1d4,
     name: "panel-product"
   }, {
     path: "/panel/profile",
-    component: _1a88e96e,
+    component: _47c7ccda,
     name: "panel-profile"
   }, {
     path: "/panel/tickets",
-    component: _9455e96a,
+    component: _0ae14cdc,
     name: "panel-tickets"
   }, {
     path: "/panel/user",
-    component: _49b67d97,
+    component: _60270da6,
     name: "panel-user"
   }, {
     path: "/panel/tickets/send",
-    component: _01bf15c2,
+    component: _3bad3d6e,
     name: "panel-tickets-send"
   }, {
     path: "/panel/product/update/:id?",
-    component: _29224c42,
+    component: _1ebd45da,
     name: "panel-product-update-id"
   }, {
     path: "/panel/tickets/answer/:id?",
-    component: _795b4df5,
+    component: _40da5ec6,
     name: "panel-tickets-answer-id"
   }, {
     path: "/panel/user/update/:id?",
-    component: _da5a4ad4,
+    component: _9fd63936,
     name: "panel-user-update-id"
   }, {
     path: "/product/category/:id?",
-    component: _9e1b73be,
+    component: _052392a0,
     name: "product-category-id"
   }, {
     path: "/product/search_result/:value?",
-    component: _758f2aaa,
+    component: _60fe5c3a,
     name: "product-search_result-value"
   }, {
     path: "/product/single_product/:id?",
-    component: _40006ea7,
+    component: _686377f6,
     name: "product-single_product-id"
   }, {
     path: "/",
-    component: _015f3ee4,
+    component: _e4e837c2,
     name: "index"
   }],
 
