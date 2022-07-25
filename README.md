@@ -1,4 +1,4 @@
-# practical_group_1401_2
+# practical_group_1401_1
 All the projects related to the first group of 1401 are here
 ```
 | backend => node js
@@ -9,7 +9,7 @@ All the projects related to the first group of 1401 are here
 
 *clone*
 ```
-git clone https://github.com/onlineabedini/practical_group_1401_2.git
+git clone https://github.com/onlineabedini/practical_group_1401_1.git
 ```
 
 *pull*

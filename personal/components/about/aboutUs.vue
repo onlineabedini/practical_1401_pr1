@@ -1,11 +1,13 @@
 <template>
   <div>
-    <div class="text-center">
-      <h1>درباره من</h1>
-      <h5>
-        درباره من در این صفحه مطالعه کن
-      </h5>
-      <hr>
+     
+     
+   <div class="p-5 text-center">
+     
+      <h1 class="mb-3">درباره ی من</h1>
+      <p class="title fw-bold border border-1 shadow-sm w-50">
+        در باره ی من در این صفحه مطالعه کن
+      </p>
       <p>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
@@ -20,24 +22,19 @@
       </p>
     </div>
   </div>
+  
+    
+ 
+      
+ 
 </template>
+
 <script>
-export default {
-  head: {
-    title: 'About page',
-    meta: [
-      {
-        hid: 'درباره من',
-        name: 'about me',
-        content: 'در این صفحه در مورد من مطالعه کنید و به صورت خلاصه با من اشنا بشید.  همراه ما باشید'
-      }
-    ],
-  }
-}
+export default {};
 </script>
+
 <style scoped>
-hr{
-  height: 2px;
-  background-color: black;
+.title {
+  display: inline-grid;
 }
-</style>;
+</style>
