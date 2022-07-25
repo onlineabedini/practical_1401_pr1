@@ -1,47 +1,65 @@
 <template>
   <div>
-    <div class="row bg-dark p-4">
-      <div class="col-5 d-flex ">
-        <a href="#" class="text-decoration-none w-100">
-          <h3 class="text-white fs-3">
-            Ir node 
-          </h3>
+    <div class="border border-3 row bg-dark">
+        <div class="col-2 "></div>
+         
+      <div class="col-8  ">
+
+      <div class="d-flex">
+        <a href="#" class="text-decoration-none">
+          <h3 class="text-white mx-4 fw-bold pt-2">m</h3>
         </a>
-        <a href="#" class="text-decoration-none text-white fs-3 mx-5 mt-3">خانه</a>
-        <button
-          type="button"
-          class="btn btn-warning dropdown-toggle h-50 mt-3"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          خانه
-        </button>
-        <a href="#" class="text-decoration-none text-white fs-3 mx-5 mt-3">
+        <a href="#" class="text-decoration-none text-white mx-2 pt-2"> خانه </a>
+
+        <div class="dropdown show mx-4 pt-2">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            خدمات ما
+          </a>
+        </div>
+        <a href="#" class="text-decoration-none text-white mx-2 pt-2">
           وبلاگ
         </a>
-        <button
-          type="button"
-          class="btn btn-warning dropdown-toggle h-50 mt-3"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          دربازه ی ما
-        </button>
-      </div>
-      <div class="col-4"></div>
-      <div class="col-3">
-        <div class="d-flex">
-          <a href="#"><i class="fa fa-search fa-2x text-white mt-4 fs-4 mx-4"></i></a>
-          <a href="#"><i class="fa fa-shopping-cart fa-2x text-white mt-4 fs-4"></i></a>
-          <div class="mt-3 d-flex">
-          <a href="#" class="text-decoration-none text-white fs-5 mx-4">عضویت</a>
-          <div class="border border-end border-white"></div>
-          <a href="#" class="text-decoration-none text-white fs-5 mx-4">ورود</a>
-          </div>
+        <div class="dropdown show mx-4 pt-2">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            درباره ما
+          </a>
+        </div>
         </div>
       </div>
-    </div>
-  </div>
+       <div class="col-2 ">
+           <div class="d-flex justify-content-end">
+             <a href="commercial\pages\about_us\about_irnode.vue" class="text-decoration-none text-white mx-4 py-2 ">
+                عضویت
+        </a> 
+         <a href="#" class="text-decoration-none text-white mx-4 py-2 ">
+                 وارد شوید
+                 </a>
+           </div>
+       </div>
+      
+      </div>
+
+   
+      
+      </div>
+    
+ 
 </template>
 
 <script>
