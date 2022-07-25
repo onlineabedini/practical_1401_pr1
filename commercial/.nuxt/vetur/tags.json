@@ -17,6 +17,15 @@
   "HeaderLoginProfileButton": {
     "description": "Auto imported from components/header/login_profile_button.vue"
   },
+<<<<<<< HEAD
+=======
+  "Header": {
+    "description": "Auto imported from components/header/index.vue"
+  },
+  "HeaderLoginProfileButton": {
+    "description": "Auto imported from components/header/login_profile_button.vue"
+  },
+>>>>>>> parent of f0695c9 (tak done)
   "ImgGrid": {
     "description": "Auto imported from components/img_grid/index.vue"
   },

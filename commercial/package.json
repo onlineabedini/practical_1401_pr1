@@ -7,8 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "backend" : "nodemon backend",
-    "jtelb" : "nodemon backend/bot.js --ignore jtelb_data.json"
+    "backend" : "nodemon backend"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",

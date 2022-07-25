@@ -10,6 +10,10 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/footer/index.vue)
 - `<CardsBlogCard>` | `<cards-blog-card>` (components/cards/blog_card.vue)
 - `<CardsSampleCard>` | `<cards-sample-card>` (components/cards/sample_card.vue)
+<<<<<<< HEAD
+=======
+- `<Footer>` | `<footer>` (components/footer/index.vue)
+>>>>>>> parent of f0695c9 (tak done)
 - `<Header>` | `<header>` (components/header/index.vue)
 - `<HeaderLoginProfileButton>` | `<header-login-profile-button>` (components/header/login_profile_button.vue)
 - `<ImgGrid>` | `<img-grid>` (components/img_grid/index.vue)
