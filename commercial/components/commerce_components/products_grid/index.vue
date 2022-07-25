@@ -6,7 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                    <single_card></single_card>
+                    <single_card
+
+                    
+                    ></single_card>
             </div>
             <div class="col-md-3">
 
@@ -33,6 +36,12 @@ export default {
   comments: {
     single_card,
   },
+  data() {
+    return{
+        products:[
+        ]
+    }
+  }
 };
 </script>
 
