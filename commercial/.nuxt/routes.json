@@ -1,0 +1,142 @@
+[
+  {
+    "name": "checkout",
+    "path": "/checkout",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\checkout.vue",
+    "chunkName": "pages/checkout",
+    "_name": "_30add309"
+  },
+  {
+    "name": "panel",
+    "path": "/panel",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\index.vue",
+    "chunkName": "pages/panel/index",
+    "_name": "_63d12b11"
+  },
+  {
+    "name": "product",
+    "path": "/product",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\index.vue",
+    "chunkName": "pages/product/index",
+    "_name": "_5ce50ef4"
+  },
+  {
+    "name": "about_us-about_irnode",
+    "path": "/about_us/about_irnode",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\about_irnode.vue",
+    "chunkName": "pages/about_us/about_irnode",
+    "_name": "_996ccaa0"
+  },
+  {
+    "name": "about_us-come_work_with_us",
+    "path": "/about_us/come_work_with_us",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\come_work_with_us.vue",
+    "chunkName": "pages/about_us/come_work_with_us",
+    "_name": "_e4b46d3e"
+  },
+  {
+    "name": "about_us-contact_us",
+    "path": "/about_us/contact_us",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\contact_us.vue",
+    "chunkName": "pages/about_us/contact_us",
+    "_name": "_639188f0"
+  },
+  {
+    "name": "about_us-Survey",
+    "path": "/about_us/Survey",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\Survey.vue",
+    "chunkName": "pages/about_us/Survey",
+    "_name": "_5892604d"
+  },
+  {
+    "name": "about_us-terms",
+    "path": "/about_us/terms",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\about_us\\\\terms.vue",
+    "chunkName": "pages/about_us/terms",
+    "_name": "_4593b3f8"
+  },
+  {
+    "name": "panel-product",
+    "path": "/panel/product",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\product\\\\index.vue",
+    "chunkName": "pages/panel/product/index",
+    "_name": "_3b43e1d4"
+  },
+  {
+    "name": "panel-profile",
+    "path": "/panel/profile",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\profile\\\\index.vue",
+    "chunkName": "pages/panel/profile/index",
+    "_name": "_47c7ccda"
+  },
+  {
+    "name": "panel-tickets",
+    "path": "/panel/tickets",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\index.vue",
+    "chunkName": "pages/panel/tickets/index",
+    "_name": "_0ae14cdc"
+  },
+  {
+    "name": "panel-user",
+    "path": "/panel/user",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\user\\\\index.vue",
+    "chunkName": "pages/panel/user/index",
+    "_name": "_60270da6"
+  },
+  {
+    "name": "panel-tickets-send",
+    "path": "/panel/tickets/send",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\send.vue",
+    "chunkName": "pages/panel/tickets/send",
+    "_name": "_3bad3d6e"
+  },
+  {
+    "name": "panel-product-update-id",
+    "path": "/panel/product/update/:id?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\product\\\\update\\\\_id.vue",
+    "chunkName": "pages/panel/product/update/_id",
+    "_name": "_1ebd45da"
+  },
+  {
+    "name": "panel-tickets-answer-id",
+    "path": "/panel/tickets/answer/:id?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\tickets\\\\answer\\\\_id.vue",
+    "chunkName": "pages/panel/tickets/answer/_id",
+    "_name": "_40da5ec6"
+  },
+  {
+    "name": "panel-user-update-id",
+    "path": "/panel/user/update/:id?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\panel\\\\user\\\\update\\\\_id.vue",
+    "chunkName": "pages/panel/user/update/_id",
+    "_name": "_9fd63936"
+  },
+  {
+    "name": "product-category-id",
+    "path": "/product/category/:id?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\category\\\\_id.vue",
+    "chunkName": "pages/product/category/_id",
+    "_name": "_052392a0"
+  },
+  {
+    "name": "product-search_result-value",
+    "path": "/product/search_result/:value?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\search_result\\\\_value.vue",
+    "chunkName": "pages/product/search_result/_value",
+    "_name": "_60fe5c3a"
+  },
+  {
+    "name": "product-single_product-id",
+    "path": "/product/single_product/:id?",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\product\\\\single_product\\\\_id.vue",
+    "chunkName": "pages/product/single_product/_id",
+    "_name": "_686377f6"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "F:\\\\project\\\\practical_group_1401_1\\\\commercial\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e4e837c2"
+  }
+]
