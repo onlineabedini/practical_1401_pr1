@@ -18,7 +18,7 @@
     font-family: programmmingLancer;
 }
 
-::selection {
+/* ::selection {
     background-color: var(--orange);
 }
 
@@ -37,4 +37,4 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background: rgb(206, 206, 206) !important;
-}
+} */

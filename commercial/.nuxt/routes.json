@@ -1,0 +1,205 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_0bd1e516"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/blog.vue",
+    "chunkName": "pages/blog",
+    "_name": "_6a1c9cae"
+  },
+  {
+    "name": "cart",
+    "path": "/cart",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/cart/index.vue",
+    "chunkName": "pages/cart/index",
+    "_name": "_ec3dc92c"
+  },
+  {
+    "name": "checkout",
+    "path": "/checkout",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/checkout.vue",
+    "chunkName": "pages/checkout",
+    "_name": "_4d18e466"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_6169cbe9"
+  },
+  {
+    "name": "panel",
+    "path": "/panel",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/index.vue",
+    "chunkName": "pages/panel/index",
+    "_name": "_0ee240d0"
+  },
+  {
+    "name": "product",
+    "path": "/product",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/product/index.vue",
+    "chunkName": "pages/product/index",
+    "_name": "_548f31bb"
+  },
+  {
+    "name": "samples",
+    "path": "/samples",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/samples.vue",
+    "chunkName": "pages/samples",
+    "_name": "_6927cb52"
+  },
+  {
+    "name": "skills",
+    "path": "/skills",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/skills.vue",
+    "chunkName": "pages/skills",
+    "_name": "_7ca25289"
+  },
+  {
+    "name": "about_us-about_irnode",
+    "path": "/about_us/about_irnode",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about_us/about_irnode.vue",
+    "chunkName": "pages/about_us/about_irnode",
+    "_name": "_2f7dd2c5"
+  },
+  {
+    "name": "about_us-come_work_with_us",
+    "path": "/about_us/come_work_with_us",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about_us/come_work_with_us.vue",
+    "chunkName": "pages/about_us/come_work_with_us",
+    "_name": "_452a566c"
+  },
+  {
+    "name": "about_us-contact_us",
+    "path": "/about_us/contact_us",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about_us/contact_us.vue",
+    "chunkName": "pages/about_us/contact_us",
+    "_name": "_122ec245"
+  },
+  {
+    "name": "about_us-Survey",
+    "path": "/about_us/Survey",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about_us/Survey.vue",
+    "chunkName": "pages/about_us/Survey",
+    "_name": "_83f8e7bc"
+  },
+  {
+    "name": "about_us-terms",
+    "path": "/about_us/terms",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/about_us/terms.vue",
+    "chunkName": "pages/about_us/terms",
+    "_name": "_7094a8e2"
+  },
+  {
+    "name": "cart-biling",
+    "path": "/cart/biling",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/cart/biling.vue",
+    "chunkName": "pages/cart/biling",
+    "_name": "_237e73d5"
+  },
+  {
+    "name": "panel-product",
+    "path": "/panel/product",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/product/index.vue",
+    "chunkName": "pages/panel/product/index",
+    "_name": "_7ce5edb0"
+  },
+  {
+    "name": "panel-profile",
+    "path": "/panel/profile",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/profile/index.vue",
+    "chunkName": "pages/panel/profile/index",
+    "_name": "_c354ec2c"
+  },
+  {
+    "name": "panel-tickets",
+    "path": "/panel/tickets",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/tickets/index.vue",
+    "chunkName": "pages/panel/tickets/index",
+    "_name": "_6429fcb0"
+  },
+  {
+    "name": "panel-user",
+    "path": "/panel/user",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/user/index.vue",
+    "chunkName": "pages/panel/user/index",
+    "_name": "_24ebc280"
+  },
+  {
+    "name": "panel-tickets-send",
+    "path": "/panel/tickets/send",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/tickets/send.vue",
+    "chunkName": "pages/panel/tickets/send",
+    "_name": "_3173bf22"
+  },
+  {
+    "name": "panel-product-update-id",
+    "path": "/panel/product/update/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/product/update/_id.vue",
+    "chunkName": "pages/panel/product/update/_id",
+    "_name": "_3db0a486"
+  },
+  {
+    "name": "panel-tickets-answer-id",
+    "path": "/panel/tickets/answer/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/tickets/answer/_id.vue",
+    "chunkName": "pages/panel/tickets/answer/_id",
+    "_name": "_6218e4fa"
+  },
+  {
+    "name": "panel-user-update-id",
+    "path": "/panel/user/update/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/panel/user/update/_id.vue",
+    "chunkName": "pages/panel/user/update/_id",
+    "_name": "_11c15c94"
+  },
+  {
+    "name": "product-category-id",
+    "path": "/product/category/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/product/category/_id.vue",
+    "chunkName": "pages/product/category/_id",
+    "_name": "_9051d260"
+  },
+  {
+    "name": "product-search_result-value",
+    "path": "/product/search_result/:value?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/product/search_result/_value.vue",
+    "chunkName": "pages/product/search_result/_value",
+    "_name": "_ccdd4618"
+  },
+  {
+    "name": "product-single_product-id",
+    "path": "/product/single_product/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/product/single_product/_id.vue",
+    "chunkName": "pages/product/single_product/_id",
+    "_name": "_0384c88a"
+  },
+  {
+    "name": "article-id",
+    "path": "/article/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/article/_id.vue",
+    "chunkName": "pages/article/_id",
+    "_name": "_d463202c"
+  },
+  {
+    "name": "sample-id",
+    "path": "/sample/:id?",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/sample/_id.vue",
+    "chunkName": "pages/sample/_id",
+    "_name": "_7ef1411c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/reza/Desktop/projects/practical_group_1401_2/commercial/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2b89bfdb"
+  }
+]
