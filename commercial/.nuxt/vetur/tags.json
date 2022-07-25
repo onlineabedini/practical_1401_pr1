@@ -2,30 +2,21 @@
   "Logo": {
     "description": "Auto imported from components/logo.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/footer/index.vue"
-  },
   "CardsBlogCard": {
     "description": "Auto imported from components/cards/blog_card.vue"
   },
   "CardsSampleCard": {
     "description": "Auto imported from components/cards/sample_card.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/footer/index.vue"
+  },
   "Header": {
     "description": "Auto imported from components/header/index.vue"
   },
   "HeaderLoginProfileButton": {
     "description": "Auto imported from components/header/login_profile_button.vue"
   },
-<<<<<<< HEAD
-=======
-  "Header": {
-    "description": "Auto imported from components/header/index.vue"
-  },
-  "HeaderLoginProfileButton": {
-    "description": "Auto imported from components/header/login_profile_button.vue"
-  },
->>>>>>> parent of f0695c9 (tak done)
   "ImgGrid": {
     "description": "Auto imported from components/img_grid/index.vue"
   },
