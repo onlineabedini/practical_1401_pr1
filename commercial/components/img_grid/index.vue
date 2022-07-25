@@ -61,9 +61,7 @@
 <script>
 import single_grid_pic from "@/components/img_grid/single_grid_pic.vue";
 export default {
-  layout() {
-    return "single_grid_pic";
-  },
+  name: "single_grid_pic",
   components: {
     single_grid_pic,
   },
