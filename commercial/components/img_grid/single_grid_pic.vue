@@ -1,38 +1,27 @@
 <template>
-  <div>
-    <div>
-      <div class="row t1 p-4 m-0">
-        <div class="col-5 d-table">
-          <img class="m1 rounded" :src="book.image" />
-        </div>
-
-        <div class="col-6 p-0">
-          <div>
-            <h4 class="text-secondary">{{ book.postTitle }}</h4>
-          </div>
-
-          <div>
-            <h3>{{ book.title }}</h3>
-          </div>
-
-          <div class="btn btn-light">مشاهده و خرید</div>
-        </div>
-      </div>
+  <div class="row m-0">
+    <div class="col" v-if="img_position == 'top'">
+      <img :src="item.cardImage" class="img-fluid d-table" alt="img" />
+    </div>
+    <div class="col mt-4">
+      <h5 class="text-center text-secondary">
+        {{ item.cardTitle }}
+      </h5>
+      <h4 class="text-center">
+        {{ item.text }}
+      </h4>
+    </div>
+    <div class="col" v-if="img_position == 'left'">
+      <img :src="item.cardImage" class="img-fluid d-table" alt="img" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["book"],
-  data() {
-    return {};
-  },
+  props: ["item", "img_position"],
 };
 </script>
 
 <style scoped>
-  .m1{
-    height: 200px;
-  }
 </style>

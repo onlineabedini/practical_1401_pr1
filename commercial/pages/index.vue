@@ -3,13 +3,13 @@
     <app_header></app_header>
     <grids></grids>
     <products_grid></products_grid>
-    <img_card ></img_card>
+    <!-- <img_grid ></img_grid> -->
     <app_footer></app_footer>
   </div>
 </template>
 
 <script>
-import img_card from '@/components/second_img_card';
+// import img_grid from '@/components/second_img_grid';
 import grids from '@/components/img_grid'
 import app_header from '@/components/header/index.vue'
 import products_grid from '@/components/commerce_components/products_grid'
@@ -20,7 +20,7 @@ export default {
     grids,
     products_grid,
     app_footer,
-    img_card,
+    // img_grid,
   }
 
 }
