@@ -2,14 +2,14 @@
   "Logo": {
     "description": "Auto imported from components/logo.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/footer/index.vue"
+  },
   "CardsBlogCard": {
     "description": "Auto imported from components/cards/blog_card.vue"
   },
   "CardsSampleCard": {
     "description": "Auto imported from components/cards/sample_card.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/footer/index.vue"
   },
   "Header": {
     "description": "Auto imported from components/header/index.vue"
