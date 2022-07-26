@@ -3,20 +3,27 @@
     <div class="text-center p-3">
       <h3>سرویس های پخش فیلم و سریال</h3>
     </div>
-    <div class=" p-5 mx-4">
-      <a href="#" class="row text-decoration-none"
-        ><div class="zoom-hover col-md-3">
+    <div class="row p-5 mx-5">
+      <a href="#" class="col-md-3">
+        <div class="zoom-hover">
           <single_card :product="products[0]"></single_card>
         </div>
-        <div class="zoom-hover col-md-3">
+      </a>
+      <a href="#" class="col-md-3">
+        <div class="zoom-hover">
           <single_card :product="products[1]"></single_card>
         </div>
-        <div class="zoom-hover col-md-3">
+      </a>
+      <a href="#" class="col-md-3">
+        <div class="zoom-hover">
           <single_card :product="products[2]"></single_card>
         </div>
-        <div class="zoom-hover col-md-3">
-          <single_card :product="products[3]"></single_card></div
-      ></a>
+      </a>
+      <a href="#" class="col-md-3">
+        <div class="zoom-hover">
+          <single_card :product="products[3]"></single_card>
+        </div>
+      </a>
     </div>
   </div>
 </template>
@@ -65,5 +72,8 @@ export default {
   opacity: 0.7;
   transform: scale(1.02);
   transition: all 0.2s ease;
+}
+a {
+  text-decoration: none;
 }
 </style>
