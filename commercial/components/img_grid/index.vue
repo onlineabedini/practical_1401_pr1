@@ -2,7 +2,7 @@
   <div class="row m-5 p-5">
     <div class="col-md-8 p-1">
       <!-- col1 -->
-      <div class="row ">
+      <a href="#" class="row text-decoration-none">
         <div class="col-md-4 p-1 ">
           <div class="a1">
             <single_grid_pic
@@ -20,8 +20,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+      </a>
+      <a href="#" class="row text-decoration-none">
         <div class="col-md-8 p-1">
           <div class="c1">
             <single_grid_pic
@@ -43,18 +43,18 @@
             ></single_grid_pic>
           </div>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- col2 -->
-    <div class="col-md-4 p-2">
+    <a href="#" class="col-md-4 p-2 text-decoration-none">
       <div class="f1">
         <single_grid_pic :item="items[4]" img_position="left" class="d-table p-5"></single_grid_pic>
         <div class="btn rounded-pill btn-light d-grid col-md-4 ">
           مشاهده و خرید
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -131,4 +131,5 @@ export default {
   border-radius: 10px;
   vertical-align: top;
 }
+
 </style>

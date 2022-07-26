@@ -7,7 +7,7 @@
       <h5 class="text-center text-secondary">
         {{ item.cardTitle }}
       </h5>
-      <h4 class="text-center">
+      <h4 class="text-center text-dark ">
         {{ item.text }}
       </h4>
     </div>

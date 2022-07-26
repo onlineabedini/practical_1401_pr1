@@ -1,19 +1,25 @@
 <template>
-  <div class="m-0">
+  <div>
+    <i class="text-white bg-danger fa"><p>discount</p></i>
     <img :src="product.cardImage" class="img-fluid d-table" alt="img" />
 
-    <h5 class="text-center text-secondary">
+    <h3 class="text-center text-dark">
       {{ product.cardTitle }}
+    </h3>
+    <h5 class="text-center text-secondary">
+      {{ product.price }}
     </h5>
-    <h4 class="text-center">
-      {{ product.text }}
-    </h4>
+    <!-- plus icon -->
+    <div class="d-flex justify-content-center">
+      <div class="btn rounded-pill btn-danger d-grid col-md-2">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "single_card",
   props: ["product"],
 };
 </script>
