@@ -1,52 +1,37 @@
 //this is application server file
 const express = require('express');
 const app = express();
-const port = 8083;
-const api_router = require('./controllers/main_controller/main_api')
+const port = 8082;
+const api_router = require('./restful/api')
+const mongoose = require('mongoose');
+const routes = require('./MVC/routes')
 
 module.exports = class application {
     constructor() {
         this.server_config()
-        // config mongodb
-        this.api_config()
+        this.config_mongodb()
+        this.resful_config()
+        this.MVC_config()
     }
 
-    server_config() {
-        app.listen(port, () => {
-            console.log('app2 is running on http://localhost:8083/')
+    async server_config() {
+        await app.listen(port, () => {
+            console.log('app3 is running on http://localhost:8082/')
         })
     }
 
-    // config mongodb
-
-    api_config() {
-        app.use('/api', api_router)
-        app.use('/', (req, res)=>{
-            response.writeHead(302, {
-                'Location': 'https://www.digikala.com/'
-                //add other headers here...
-              });
-              response.end();
+    async config_mongodb() {
+        await mongoose.connect('mongodb://localhost:27017/irnode_commercial').then(() => {
+            console.log('database config success')
         })
     }
 
-    // ----------------------------- task1
-    // mongodb configuration
+    async resful_config() {
+        await app.use('/api', api_router)
+    }
 
+    async MVC_config() {
+        await app.use('/', routes)
+    }
 
-    // ----------------------------- task2
-    // based on MVC structure update project
-    /*
-        /controller
-        /api
-        /router
-    */
-
-
-    // ----------------------------- task3
-    // add middleware to the project
-    /*
-        /middleware
-            -> both global and local
-    */
 }

@@ -34,6 +34,4 @@ module.exports = class application {
         await app.use('/', routes)
     }
 
-    // ----------------------------- task1
-    // mongodb configuration
 }
