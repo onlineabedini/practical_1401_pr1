@@ -11,15 +11,10 @@
           <p>شعار ما در لایسنس مارکت این است که "بی نقص نیستم ولی سعی میکنیم بهترین باشیم" در نتیجه همیشه در تلاشیم که سرویس ها و سرویس دهی خود را بهبود دهیم و در این راه شما کاربران گرامی راهنمای ما بوده و هستید. از این که در این فرم نظرسنجی شرکت می کنید بسیار خرسندیم.</p>
       </div>
       <div class="row">
-          <div class="col t5">
-         
+         <div class="col-12 d-flex justify-content-center mb-4">
          <a class="btn btn-danger btn-lg" href="#" role="button ">شروع</a>
-        
-
-          </div>
-          <div class="col t7">
-            <p class="lead" >↵ Enter را فشار دهید</p>
-          </div>
+            <p class="m-3">↵ Enter را فشار دهید</p>
+            </div>
       </div>
 
     </div>
