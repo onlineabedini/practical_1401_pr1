@@ -22,7 +22,7 @@ module.exports = class application {
 
     async config_mongodb() {
         await mongoose.connect('mongodb://localhost:27017/irnode_commercial').then(() => {
-            console.log('database config success')
+            console.log('app1 database config success')
         })
     }
 
