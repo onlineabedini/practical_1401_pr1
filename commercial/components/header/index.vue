@@ -47,7 +47,7 @@
              <a href="commercial\pages\about_us\about_irnode.vue" class="text-decoration-none text-white mx-4 py-2 ">
                 عضویت
         </a> 
-         <a href="#" class="text-decoration-none text-white mx-4 py-2 ">
+         <a href="auth/loggin" class="text-decoration-none text-white mx-4 py-2 ">
                  وارد شوید
                  </a>
            </div>
