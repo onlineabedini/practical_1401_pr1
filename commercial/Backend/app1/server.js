@@ -6,6 +6,18 @@ const api_router = require('./restful/api')
 const mongoose = require('mongoose');
 const routes = require('./MVC/routes')
 
+let db = mongoose.connection
+
+//check connection
+db.once('open', () => { 
+    console.log('app1 database connected to MongoDB successfuly');
+} );
+
+//check for DB errors
+db.on('error', function(err){
+    console.log(err);
+});
+
 module.exports = class application {
     constructor() {
         this.server_config()
@@ -21,9 +33,7 @@ module.exports = class application {
     }
 
     async config_mongodb() {
-        await mongoose.connect('mongodb://localhost:27017/irnode_commercial').then(() => {
-            console.log('app1 database config success')
-        })
+        await mongoose.connect('mongodb://localhost:27017/nodekb')
     }
 
     async resful_config() {

@@ -2,12 +2,8 @@
 
 function sample_middleware(ctx, next) {   
     // middleware works if you uncomment this
-    if (ctx.message.text === 'سلام'){
-        ctx.reply('سلام عزیزم') 
-    }
-    else {
-        ctx.reply('برو از رضا بپرس')
-    }
+    // ctx.reply('middleware is working! ' + ctx.from.username) 
+    next()
 }
 
 /* 

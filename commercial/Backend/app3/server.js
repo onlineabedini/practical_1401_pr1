@@ -21,7 +21,7 @@ module.exports = class application {
     }
 
     async config_mongodb() {
-        await mongoose.connect('mongodb://localhost:27017/irnode_commercial').then(() => {
+        await mongoose.connect('mongodb://localhost:27017/nodekb').then(() => {
             console.log('app3 database config success')
         })
     }

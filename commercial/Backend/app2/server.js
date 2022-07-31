@@ -7,7 +7,7 @@ const api_router = require('./controllers/main_controller/main_api')
 module.exports = class application {
     constructor() {
         this.server_config()
-        // config mongodb
+        //this.config_mongodb()
         this.api_config()
     }
 
