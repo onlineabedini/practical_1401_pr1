@@ -10,7 +10,7 @@
           <div class="card shadow p-3 mb-5 bg-body rounded">
             <div class="card-body p-5">
               <!--  -->
-              <h3 >ورود</h3>
+              <h3>ورود</h3>
               <h6 class="mb-5 text-secondary">
                 در المنتور فارسی حساب ندارید؟
                 <a href="#" class="text-danger">ثبت نام کنید</a>
@@ -38,7 +38,9 @@
                   <label> مرا به خاطر بسپار </label>
                 </div>
                 <div class="form-group mb-2 d-grid p-2">
-                  <button type="submit" class="btn btn-primary btn-block ">ورود</button>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    ورود
+                  </button>
                 </div>
 
                 <div class="form-group mb-2 d-grid p-2">
@@ -80,7 +82,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      login: {
+        email: "",
+        password: "",
+      },
+    };
+  },
+  methods: {
+    login() {
+      this.$store.dispatch("login", this.login);
+    },
+  },
+};
 </script>
 
 <style>
