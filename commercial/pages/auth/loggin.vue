@@ -35,11 +35,19 @@
                   />
                 </div>
                 <div class="form-group mb-2">
-                  <input type="checkbox" class="custom-control-input" />
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    v-model="user_info.checked"
+                  />
                   <label> مرا به خاطر بسپار </label>
                 </div>
                 <div class="form-group mb-2 d-grid p-2">
-                  <button type="submit" class="btn btn-primary btn-block" @click="login()">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    @click="login()"
+                  >
                     ورود
                   </button>
                 </div>
@@ -59,14 +67,16 @@ export default {
       user_info: {
         username: "",
         password: "",
+        checked: false,
       },
     };
   },
   methods: {
     login() {
-        alert('ورود شما موفقیت آمیز بود')
-        console.log("username:",this.user_info.username)
-        console.log("pass:",this.user_info.password)
+      console.log("username:", this.user_info.username);
+      console.log("pass:", this.user_info.password);
+      console.log("checked:", this.user_info.checked);
+      alert("ورود شما موفقیت آمیز بود");
     },
   },
 };
