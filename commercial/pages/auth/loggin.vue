@@ -19,10 +19,10 @@
               <form>
                 <div class="form-group mb-2">
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
-                    id="email"
-                    placeholder="شماره موبایل یا آدرس ایمیل"
+                    placeholder="username"
+                    v-model="user_info.username"
                   />
                 </div>
                 <div class="form-group mb-2">
@@ -31,6 +31,7 @@
                     class="form-control"
                     id="password"
                     placeholder="رمز عبور"
+                    v-model="user_info.password"
                   />
                 </div>
                 <div class="form-group mb-2">
@@ -38,39 +39,9 @@
                   <label> مرا به خاطر بسپار </label>
                 </div>
                 <div class="form-group mb-2 d-grid p-2">
-                  <button type="submit" class="btn btn-primary btn-block">
+                  <button type="submit" class="btn btn-primary btn-block" @click="login()">
                     ورود
                   </button>
-                </div>
-
-                <div class="form-group mb-2 d-grid p-2">
-                  <a
-                    href="#"
-                    class="text-black-50 mx-auto text-decoration-none"
-                  >
-                    ورود با رمز عبور یکبار مصرف
-                  </a>
-                </div>
-                <!-- login with google -->
-                <div class="form-group mb-2 d-grid p-2">
-                  <button class="btn btn-primary btn-block">
-                    <a href=""
-                      ><img
-                        class="d-inline-block align-right"
-                        width="20px"
-                        alt="Google sign-in"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-                      />
-                    </a>
-
-                    ورود با گوگل
-                  </button>
-                </div>
-                <!-- login with google  -->
-                <div class="form-group mb-2 d-grid p-2">
-                  <a href="#" class="text-black-50 mx-auto">
-                    فراموشی رمز عبور؟
-                  </a>
                 </div>
               </form>
             </div>
@@ -85,15 +56,17 @@
 export default {
   data() {
     return {
-      login: {
-        email: "",
+      user_info: {
+        username: "",
         password: "",
       },
     };
   },
   methods: {
     login() {
-      this.$store.dispatch("login", this.login);
+        alert('ورود شما موفقیت آمیز بود')
+        console.log("username:",this.user_info.username)
+        console.log("pass:",this.user_info.password)
     },
   },
 };
