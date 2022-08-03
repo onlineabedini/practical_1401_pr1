@@ -1,0 +1,49 @@
+datasource db {
+    provider = "postgresql"
+    url = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+//===================================================================================================
+
+model Person{
+    id Int @default(autoincrement()) @id
+    faName String
+    enNAME String @default("Mohammad")
+
+}
+
+//======================================================================================================
+
+model Provinces{
+    //common fields-----------------
+    id Int @default(autoincrement()) @id
+    appAction Boolean @default(true)
+    createdAT DateTime @default(now()) @db.Timestamptz(3)
+    updatedAT DateTime? @updatedAt @db.Timestamptz(3)
+    //required fields----------------
+    faName String
+    isCapital Boolean @default(false)
+    //Has------------------
+    cities Cities[] @relation("PROVINCE_CITES")
+}
+
+//=======================================================================================================
+
+model Cities{
+    //common fields-----------------
+    id Int @default(autoincrement()) @id
+    appAction Boolean @default(true)
+    createdAT DateTime @default(now()) @db.Timestamptz(3)
+    updatedAT DateTime? @updatedAt @db.Timestamptz(3)
+    //required fields----------------
+    faName String
+    isCapital Boolean @default(false)
+    //Has------------------
+    PROCINCEId Int
+    province   Provinces @relation("PROVINCE_CITES" , fields: [PROCINCEId] , references: [id])
+
+}
