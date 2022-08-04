@@ -24,7 +24,7 @@
             خدمات ما
           </a>
         </div>
-        <a href="#" class="text-decoration-none text-white mx-2 pt-2">
+        <a href="blog" class="text-decoration-none text-white mx-2 pt-2">
           وبلاگ
         </a>
         <div class="dropdown show mx-4 pt-2">
