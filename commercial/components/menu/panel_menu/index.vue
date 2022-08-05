@@ -9,7 +9,7 @@
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="  fas fa-tachometer-alt fa-fw me-3"></i><span>داشبورد</span>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action py-2 ripple ">
+                  <a href="panel/user" class="list-group-item list-group-item-action py-2 ripple ">
                     <i class="fas fa-address-book fa-fw me-3"></i>حساب کاربری<span></span>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i

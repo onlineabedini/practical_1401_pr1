@@ -24,7 +24,7 @@
             خدمات ما
           </a>
         </div>
-        <a href="#" class="text-decoration-none text-white mx-2 pt-2">
+        <a href="blog" class="text-decoration-none text-white mx-2 pt-2">
           وبلاگ
         </a>
         <div class="dropdown show mx-4 pt-2">
@@ -44,7 +44,7 @@
       </div>
        <div class="col-2 ">
            <div class="d-flex justify-content-end">
-             <a href="commercial\pages\about_us\about_irnode.vue" class="text-decoration-none text-white mx-4 py-2 ">
+             <a href="auth/register" class="text-decoration-none text-white mx-4 py-2 ">
                 عضویت
         </a> 
          <a href="auth/loggin" class="text-decoration-none text-white mx-4 py-2 ">
