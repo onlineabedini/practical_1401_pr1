@@ -122,7 +122,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .t1{margin-inline: 200px;}
 .t2{margin-inline: 750px;}
 .t3{margin-top: 100px;}

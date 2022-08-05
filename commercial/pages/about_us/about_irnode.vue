@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .t1{margin-inline: 100px;}
 .t2{margin-top: 150px;}
 

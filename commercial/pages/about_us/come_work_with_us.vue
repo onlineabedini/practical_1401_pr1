@@ -114,7 +114,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .t5{margin-inline:200px;}
 .t1{margin-inline: 220px;}
 .t2{margin-top: 150px;}

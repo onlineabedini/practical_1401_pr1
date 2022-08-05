@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .t2{margin-top: 50px;}
 .t3{margin-bottom: 350px;}
 .t4{margin-inline: 230px;}
