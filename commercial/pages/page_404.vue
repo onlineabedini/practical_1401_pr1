@@ -1,14 +1,12 @@
 <template>
   <div>
-      <div>
+      <div class="text-center a1 a2">
+          <img src="https://addwebsite.ir/wp-content/uploads/2019/11/guide-to-wp-404-pages.png" alt="" class="">
 
-      </div>
-      <div class="text-center t1">
-          <h1 class="text-danger fw-bolder">404</h1>
           
             <div>
              <p class="text-body fs-5">
-             صفحه مورد نظر شما یافت نشد.
+             صفحه مورد نظر شما یافت نشد!
              </p>
             </div>
             <div class="p-3">
@@ -19,7 +17,7 @@
                 </span>
             </div>
          <p class="text-muted fst-normal fs-6 pt-3">
-            از نوار جست و جو بالا برای پیدا کردن کالای مورد نظرتان استفاده نمایید یا کالا های <b class="text-danger ">پر بازدید</b> زیر را ببینید.
+            از نوار جست و جو بالا برای پیدا کردن کالای مورد نظرتان استفاده نمایید یا از کلید <b class="text-primary"> بازگشت به صفحه اصلی</b> استفاده نماید.
          </p>
       </div>
   </div>
@@ -31,7 +29,9 @@ export default {
 }
 </script>
 
-<style>
-.t1{margin-top: 250px;}
+<style >
+.a1{margin-top: 250px;}
+.a2{margin-bottom: 250px;}
+body{background-color: #eaeaea;}
 
 </style>
