@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="shadow-lg p-3 mb-5 bg-body rounded mx-4 pt-2">
-      <div class="row bg-white">
+      <div class="row bg-white m-0">
         <div class="col-4">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
@@ -80,7 +80,7 @@
          <div class="col-5"></div>
          <div class="col-3"></div>
        </div>
-       <div class= "  row bg-white">
+       <div class= "row m-0 bg-white">
          <div class="mb-3 pt-5 w-75 p-3 ">
            <div class="bg-white border  mx-4">
            <div class="bg-light d-flex">
@@ -112,7 +112,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  layout: 'panels',
+};
 </script>
 
 <style>
