@@ -3,6 +3,7 @@ const { PrismaClient } = require('@prisma/client')
 const db = new PrismaClient()
 require('dotenv').config()
 
+//create user controller
 exports.create = async(req, res) => {
     let newUser = await db.User.create({
         data : {
@@ -22,18 +23,25 @@ exports.create = async(req, res) => {
         data : newUser
     })
 }
-exports.find = async(req, res) => {
-    let oldUser = await db.User.findMany({
-        include : {
-            userName : true,
-            email : true,
-            phone : true,
 
+//login user controller
+exports.login = async(req, res) => {
+    const email = req.body.email
+    const phone = req.body.phone
+    const password = req.body.password
+    let user = await db.User.findFirst({
+        where:{
+            email: email,
+            phone: phone,
+            password: password
         }
     })
-    return res.json({
-        status : 200,
-        msg : "این کاربر قبلا ثبت نام کرده است",
-        data : oldUser
-    })
+        return res.json({
+            status : 200,
+            msg : "شما با موفقیت وارد حساب کاربری خود شدید",
+            data : user
+        })
+    
 }
+
+
