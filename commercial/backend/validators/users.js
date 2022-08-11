@@ -5,7 +5,7 @@ const _ = require('lodash')
 require('dotenv').config()
 
 //require file from utils
-const {isNumber , isName} = require('./../utils/is')
+const {isNumber , isName } = require('./../utils/is')
 
 //create user validation
 exports.user_validate = async(req, res, next) => {
@@ -17,6 +17,7 @@ exports.user_validate = async(req, res, next) => {
         const password = req.body.password
         const firstName = req.body.firstName
         const lastName = req.body.lastName
+        let  gender = req.body.gender
 
         //find informations in database
         let oldUsername = await db.User.findFirst({
@@ -94,6 +95,11 @@ exports.user_validate = async(req, res, next) => {
         if(lastName && !isName(lastName)){
             return res.json({res : 400 , error :' لطفا نام خانوادگی را فقط با حروف انگلیسی یا فارسی وارد کنید و از نوشتن اعداد یا علائم خودداری کنید' })
         }
+
+        //validate gender
+        if(gender && !(gender === 'MAN') && !(gender === 'WOMAN') ){
+            return res.json({res : 400 , error :'لطفا جنسیت را فقط به صورت MAN و یا WOMAN انتخاب کنید' })
+         }
         next();
         
     } catch (error) {
