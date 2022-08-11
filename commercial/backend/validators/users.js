@@ -5,7 +5,7 @@ const _ = require('lodash')
 require('dotenv').config()
 
 //require file from utils
-const {isNumber , isName } = require('./../utils/is')
+const {isNumber , isName} = require('./../utils/is')
 
 //create user validation
 exports.user_validate = async(req, res, next) => {
@@ -39,7 +39,7 @@ exports.user_validate = async(req, res, next) => {
         })
         
         //validate exist username
-        if(oldUsername){
+        if(userName && oldUsername){
             return res.json({res : 400 , error :'در گذشته کاربری با این یوزرنیم ثبت نام کرده'})
             }
         
