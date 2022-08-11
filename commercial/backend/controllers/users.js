@@ -8,7 +8,7 @@ exports.create = async(req, res) => {
     let newUser = await db.User.create({
         data : {
             userName : req.body.userName,
-            firstnameName : req.body.firstName,
+            firstName : req.body.firstName,
             lastName : req.body.lastName,
             email : req.body.email,
             phone : req.body.phone,

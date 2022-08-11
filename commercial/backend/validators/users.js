@@ -1,6 +1,7 @@
 //config database
 const { PrismaClient, prisma } = require('@prisma/client')
 const db = new PrismaClient()
+const _ = require('lodash')
 require('dotenv').config()
 
 //require file from utils
@@ -13,9 +14,9 @@ exports.user_validate = async(req, res, next) => {
         const userName = req.body.userName
         const email = req.body.email
         const phone = req.body.phone
+        const password = req.body.password
         const firstName = req.body.firstName
         const lastName = req.body.lastName
-        let atSign = email.indexOf("@")
 
         //find informations in database
         let oldUsername = await db.User.findFirst({
@@ -42,29 +43,47 @@ exports.user_validate = async(req, res, next) => {
             }
         
         //validate exist email
-        if(oldEmail){
+        if(email && oldEmail){
             return res.json({res : 400 , error :'این ایمیل ثبت نام کرده است'})
             }
 
         //validate exist phone
-        if(oldPhone){
+        if(phone && oldPhone){
             return res.json({res : 400 , error :'این شماره تلفن ثبت نام کرده است'})
             }
         
         //validate email
-        if(atSign < 1 ){
+        if(email && (email.indexOf("@")) < 1 ){
             return res.json({res : 400 , error :'ایمیل نا معتبر است'})
         }
         
+        if(email && !_.endsWith(email , ".com")){
+            return res.json({res : 400 , error :'ایمیل باید با .com تمام شود'})
+        }
+        
         //validate phone
-        if(phone && !isNumber(phone)  || phone.length >= 12){
+        if(phone && !isNumber(phone)){
          return res.json({res : 400 , error :'تلفن نا معتبر است'})
         }
 
+        if(phone && !(phone.length === 11)){
+            return res.json({res : 400 , error :'تعداد ارقام تلفن باید یازده رقم باشد'})
+           }
+   
         //validate to inter phone or email
         if(!phone && !email){
             return res.json({res : 400 , error :'لطفا حداقل یکی از پارامترهای تلفن یا ایمیل را به درستی وارد کنید'})
         }
+
+        //validate to inter password
+        if(!password){
+            return res.json({res : 400 , error :'لطفا یک پسورد برای اکانت خود وارد کنید'})
+        }
+
+        //validate to inter username
+        if(!userName){
+            return res.json({res : 400 , error :'لطفا یک نام کاربری برای اکانت خود وارد کنید'})
+         }
 
         //validate first name
         if(firstName && !isName(firstName)){
@@ -90,11 +109,17 @@ exports.user_validate = async(req, res, next) => {
 exports.user_validate_login = async (req, res, next) => {
     try {
         //these are vars
+        const userName = req.body.userName
         const email = req.body.email
         const phone = req.body.phone
         const password = req.body.password
 
         //find informations in database
+        let trueUsername = await db.User.findFirst({
+            where:{
+                userName: userName,
+            }
+        }) 
         let trueEmail = await db.User.findFirst({
             where:{
                 email: email,
@@ -111,13 +136,18 @@ exports.user_validate_login = async (req, res, next) => {
             }
         })
 
+        //validate dont exist username
+        if(userName && !trueUsername){
+            return res.json({res : 400 , error :'کاربری با این یوزرنیم وجود ندارد'})
+         }
+
         //validate dont exist user email
-        if(!trueEmail){
+        if(email && !trueEmail){
             return res.json({res : 400 , error :'کاربری با این ایمیل وجود ندارد'})
         }
 
         //validate dont exist user phone
-        if(!truePhone){
+        if(phone && !truePhone){
             return res.json({res : 400 , error :'کاربری با این تلفن وجود ندارد'})
         }
 
@@ -129,6 +159,11 @@ exports.user_validate_login = async (req, res, next) => {
         //validate to inter phone or email
         if (!email && !phone){
             return res.json({res : 400 , error :' لطفا برای ورود ایمیل یا تلفن را وارد کنید' })
+        }
+
+        //validate to inter username
+        if (!userName){
+            return res.json({res : 400 , error :' لطفا برای ورود یوزرنیم را وارد کنید' })
         }
 
         //validate to inter password
