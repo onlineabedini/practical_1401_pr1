@@ -6,8 +6,7 @@
     "front": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "backend" : "nodemon backend"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",

@@ -19,11 +19,11 @@ model User{
     appAction          Boolean           @default(true)
     //required fields----------------
     userName           String
-    firstnameName      String?
+    firstName          String?
     lastName           String?
     address            String?       
-    email              String?            
-    phone              String?           
+    email              String?            @unique
+    phone              String?            @unique
     password           String
     gender             GENDERS            @default(MAN)
 }
