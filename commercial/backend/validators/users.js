@@ -116,24 +116,12 @@ exports.user_validate_login = async (req, res, next) => {
     try {
         //these are vars
         const userName = req.body.userName
-        const email = req.body.email
-        const phone = req.body.phone
         const password = req.body.password
 
         //find informations in database
         let trueUsername = await db.User.findFirst({
             where:{
                 userName: userName,
-            }
-        }) 
-        let trueEmail = await db.User.findFirst({
-            where:{
-                email: email,
-            }
-        }) 
-        let truePhone = await db.User.findFirst({
-            where:{
-                phone: phone,
             }
         }) 
         let truePassword = await db.User.findFirst({
@@ -147,24 +135,9 @@ exports.user_validate_login = async (req, res, next) => {
             return res.json({res : 400 , error :'کاربری با این یوزرنیم وجود ندارد'})
          }
 
-        //validate dont exist user email
-        if(email && !trueEmail){
-            return res.json({res : 400 , error :'کاربری با این ایمیل وجود ندارد'})
-        }
-
-        //validate dont exist user phone
-        if(phone && !truePhone){
-            return res.json({res : 400 , error :'کاربری با این تلفن وجود ندارد'})
-        }
-
         //validate wrong passworrd
-        if(!truePassword){
+        if(password&&!truePassword){
             return res.json({res : 400 , error :'رمز اشتباه است'})
-        }
-
-        //validate to inter phone or email
-        if (!email && !phone){
-            return res.json({res : 400 , error :' لطفا برای ورود ایمیل یا تلفن را وارد کنید' })
         }
 
         //validate to inter username

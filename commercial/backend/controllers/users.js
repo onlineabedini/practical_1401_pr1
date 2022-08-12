@@ -27,13 +27,11 @@ exports.create = async(req, res) => {
 
 //login user controller
 exports.login = async(req, res) => {
-    const email = req.body.email
-    const phone = req.body.phone
+    const userName = req.body.userName
     const password = req.body.password
     let user = await db.User.findFirst({
         where:{
-            email: email,
-            phone: phone,
+            userName: userName,
             password: password
         }
     })
