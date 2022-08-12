@@ -2,7 +2,6 @@
 const { PrismaClient } = require('@prisma/client')
 const db = new PrismaClient()
 require('dotenv').config()
-const {isNumber} = require('./../utils/is')
 
 //create user controller
 exports.create = async(req, res) => {
@@ -45,7 +44,7 @@ exports.login = async(req, res) => {
 
 exports.get_one = async(req , res) => {
     try {
-        let userId = req.params.id
+        let userId = parseInt(req.params.userId)
         let user = await db.User.findFirst({
             where:{
              id: userId
@@ -62,15 +61,9 @@ exports.get_one = async(req , res) => {
         if(!user){
             return res.json({res: 404 , error: 'کاربری با این شناسه یافت نشد' })
         }
-
-        if(userId && !isNumber){
-            return res.json({res: 404 , error: 'کاربری با این شناسه یافت نشد' })
-        }
-
-        if(user){
-            return res.json({res: 200 , data: user})
-        }
-
+        return res.json({res: 200 ,
+            msg : `اطلاعات کاربر با شناسه ${userId} بدین شرح است`,
+            data: user})
 
     } catch (error) {
         console.log(error)
@@ -100,7 +93,9 @@ exports.get_all = async(req , res) => {
         if(!user){
             return res.json({res: 404 , error: 'کاربری با این شناسه یافت نشد' })
         }
-        return res.json({res: 200 , data: user})
+        return res.json({res: 200 ,
+            msg:'اطلاعات تمامی کاربران بدین شرح است',
+            data: user})
 
     } catch (error) {
         console.log(error)
@@ -115,6 +110,10 @@ exports.get_all = async(req , res) => {
 //update user controller
 exports.update = async(req, res) => {
     let updateUser = await db.User.update({
+        where:{
+            userName : req.body.userName,
+            password : req.body.password,
+        },
         data : {
             userName : req.body.userName,
             firstName : req.body.firstName,

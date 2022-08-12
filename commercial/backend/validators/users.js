@@ -158,3 +158,20 @@ exports.user_validate_login = async (req, res, next) => {
         })
     }
 }
+
+exports.get_one_validate = (req , res , next) => {
+   try {
+    let userId = req.params.userId
+    if(userId && !isNumber(userId)){
+        return res.json({res: 404 , error: 'شناسه باید عدد باشد' })
+    }
+    next()
+   } catch (error) {
+    console.log(error)
+    return res.json({
+        status : -1,
+        msg : "عملیات با خطا مواجه شد"
+    })
+   }
+
+}
