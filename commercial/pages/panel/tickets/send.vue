@@ -64,56 +64,64 @@
       </div>
       <div class="row bg-white">
         <div class="mb-3 w-50 p-3">
-  <label for="exampleFormControlInput1" class="form-label">عنوان تیکت</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="یک عنوان کوتاه برا تیکت قرار دهید">
-</div>
+          <label for="exampleFormControlInput1" class="form-label"
+            >عنوان تیکت</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="یک عنوان کوتاه برا تیکت قرار دهید"
+          />
+        </div>
       </div>
-       <div class= "row bg-white">
-         <div class="col-4 mx-4">
-           <select class="form-select" aria-label="">
-  <option selected>بخش تیکت</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-         </div>
-         <div class="col-5"></div>
-         <div class="col-3"></div>
-       </div>
-       <div class= "row m-0 bg-white">
-         <div class="mb-3 pt-5 w-75 p-3 ">
-           <div class="bg-white border  mx-4">
-           <div class="bg-light d-flex">
-             <i class="fa fa-bold fa-s my-2 mx-4"></i>
-             <i class="fa fa-underline fa-s my-2 mx-4"></i>
-             <i class="fa fa-link fa-s my-2 mx-4"></i>
+      <div class="row bg-white">
+        <div class="col-4 mx-4">
+          <select class="form-select" aria-label="">
+            <option selected>بخش تیکت</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row m-0 bg-white">
+        <div class="mb-3 pt-5 w-75 p-3">
+          <div class="bg-white border mx-4">
+            <div class="bg-light d-flex">
+              <i class="fa fa-bold fa-s my-2 mx-4"></i>
+              <i class="fa fa-underline fa-s my-2 mx-4"></i>
+              <i class="fa fa-link fa-s my-2 mx-4"></i>
             </div>
-  <label for="exampleFormControlTextarea1" class="form-label">توضیحات</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">توضیحات خود را به صورت کامل وارد نمایید</textarea>
-         </div>
-  <div class=" pt-3 d-flex justify-content-end">
-  <button type="button" class="btn btn-light">کپی فایل</button>
-</div>
-<div class="mx-4 pt-5">
-        <button type="button" class="btn btn-success">ارسال تیکت</button>
-        <button type="button" class="btn btn-secondary">بازنشانی</button>
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >توضیحات</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            >
+توضیحات خود را به صورت کامل وارد نمایید</textarea
+            >
+          </div>
+          <div class="pt-3 d-flex justify-content-end">
+            <button type="button" class="btn btn-light">کپی فایل</button>
+          </div>
+          <div class="mx-4 pt-5">
+            <button type="button" class="btn btn-success">ارسال تیکت</button>
+            <button type="button" class="btn btn-secondary">بازنشانی</button>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-         </div>
- </div>
-        
-          
-        
-      </div>
-
-      
-    
- 
 </template>
 
 <script>
 export default {
-  layout: 'panels',
+  layout: "panels",
 };
 </script>
 
