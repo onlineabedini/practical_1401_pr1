@@ -19,8 +19,13 @@ router.post('/user/login', user_validate_login, user.login)
 
 //================================================================روت های دریافت اطلاعات===============================================
 
-router.get('/user/one/:userId')
-router.get('/users/all')
+router.get('/user/one/:userId' , user.get_one)
+router.get('/users/all' , user.get_all)
+
+//================================================================روت های آپدیت اطلاعات===============================================
+
+router.put('/user/update')
+
 
 //Exports
 module.exports = router
