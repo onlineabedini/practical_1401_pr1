@@ -46,13 +46,10 @@ export default {
   data() {
     return {
       user: {
-<<<<<<< Updated upstream
         first_name: "",
         last_name: "",
-=======
         first_name: "dsadsd",
         last_name:"",
->>>>>>> Stashed changes
         email: "",
         password: "",
         address: "",
@@ -60,7 +57,6 @@ export default {
       },
     };
   },
-<<<<<<< Updated upstream
   methods: {
     submit() {
       this.$axios
@@ -74,12 +70,7 @@ export default {
         }) 
       alert('ثبت نام انجام شد')
       // axios => send to backend 
-      // response <= backend
-=======
-  methods:{
-    send_data(){  
-      
->>>>>>> Stashed changes
+      // response <= backend      
     }
   }
 };
