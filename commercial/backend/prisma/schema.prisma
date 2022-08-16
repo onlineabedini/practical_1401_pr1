@@ -27,3 +27,17 @@ model User{
     password           String
     gender             GENDERS            @default(MAN)
 }
+
+//====================================================================================================
+model Product{
+    //common fields-----------------
+    id                Int                @default(autoincrement()) @id
+    //required fields----------------
+    title             String             @unique
+    subTitle          String?
+    price             Int
+    discount          Int?               @default(0)
+    description       String             
+    category          String?             
+    image             String?            
+}

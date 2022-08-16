@@ -3,7 +3,7 @@ const router = express.Router();
 
 //require user validation from validators
 const {user_validate} = require('../validators/users');
-const {user_validate_login , get_one_validate} = require('../validators/users');
+const {user_validate_login , get_one_validate , update_validate , delete_validate} = require('../validators/users');
 
 
 //require controller
@@ -28,10 +28,12 @@ router.get('/users/all' , user.get_all)
 //================================================================روت های آپدیت اطلاعات===============================================
 
 //update user information router
-router.put('/user/update')
+router.put('/user/update' , update_validate , user.update)
 
 //================================================================روت های حذف اطلاعات===============================================
 
+//delete user information router
+router.delete('/user/delete/:userId ', delete_validate , user.delete)
 
 //Exports
 module.exports = router
