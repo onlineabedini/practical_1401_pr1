@@ -55,7 +55,7 @@ export default {
  methods: {
   loggin() {
       this.$axios
-        .post("", this.user_info)
+        .post("http://localhost:8080/api/user/login", this.user_info)
         .then((response) => {
           console.log(response.user_info);
           
