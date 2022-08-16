@@ -1,4 +1,4 @@
-let number = /^([0123456789]+)$/;
+let number = /^([0-9]+)$/;
 let persian = /^([0123456789آ ابپتثجچحخدذرزژسشصضطظعغفقکگلمنو هی]+)$/;
 let english = /^([A-Za-z0-9-_]+)$/;
 let name = /^([ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz آ ابپتثجچحخدذرزژسشصضطظعغفقکگلمنو هی]+)$/;

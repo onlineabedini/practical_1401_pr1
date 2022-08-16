@@ -50,6 +50,7 @@ exports.get_one = async(req , res) => {
              id: userId
             },
             select:{
+                id: true,
                 userName : true,
                 firstName : true,
                 lastName : true,
@@ -69,7 +70,7 @@ exports.get_one = async(req , res) => {
         console.log(error)
         return res.json({
             status : 404 ,
-            msg : "عملیات با خطا مواجه شد"
+            msg : "عملیات در کنترلر با خطا مواجه شد"
         })
     }
 }
@@ -77,10 +78,9 @@ exports.get_one = async(req , res) => {
 exports.get_all = async(req , res) => {
     try {
         let user = await db.User.findMany({
-            where:{
-                id : req.params.id
-            },
+         
             select:{
+                id: true,
                 userName : true,
                 firstName : true,
                 lastName : true,
@@ -88,10 +88,10 @@ exports.get_all = async(req , res) => {
                 phone : true,
                 address :true
             }
-            
+        
         })
         if(!user){
-            return res.json({res: 404 , error: 'کاربری با این شناسه یافت نشد' })
+            return res.json({res: 404 , error: 'کاربری یافت نشد' })
         }
         return res.json({res: 200 ,
             msg:'اطلاعات تمامی کاربران بدین شرح است',
@@ -101,7 +101,7 @@ exports.get_all = async(req , res) => {
         console.log(error)
         return res.json({
             status : 404 ,
-            msg : "عملیات با خطا مواجه شد"
+            msg : "عملیات در کنترلر با خطا مواجه شد"
         })
     }
 
@@ -109,25 +109,58 @@ exports.get_all = async(req , res) => {
 
 //update user controller
 exports.update = async(req, res) => {
-    let updateUser = await db.User.update({
-        where:{
-            userName : req.body.userName,
-            password : req.body.password,
-        },
-        data : {
-            userName : req.body.userName,
-            firstName : req.body.firstName,
-            lastName : req.body.lastName,
-            email : req.body.email,
-            phone : req.body.phone,
-            password : req.body.password,
-            gender : req.body.gender,
-            address :req.body.address
-        }
-    })
-    return res.json({
-        status : 200,
-        msg : "اطلاعات شما با موفقیت آپدیت شد",
-        data : updateUser
-    })
+    try {
+        const id = parseInt(req.body.id)
+        let updateUser = await db.User.update({
+            where:{
+                id : id
+            },
+            data:{
+                userName : req.body.userName,
+                firstName : req.body.firstName,
+                lastName : req.body.lastName,
+                email : req.body.email,
+                phone : req.body.phone,
+                password : req.body.password,
+                gender : req.body.gender,
+                address :req.body.address
+            }    
+        })
+            return res.json({
+                status : 200,
+                msg : "اطلاعات شما با موفقیت آپدیت شد",
+                data : updateUser
+            }) 
+    } catch (error) {
+        console.log(error)
+        return res.json({
+            status : 404 ,
+            msg : "عملیات کنترلر با خطا مواجه شد"
+        })  
+    }
 }
+
+//delete user controller
+exports.delete = async(req, res) => {
+    try {
+        let userId = parseInt(req.params.id)
+        let deleteUser = await db.User.delete({
+            where:{
+                id : userId,
+            }
+        })
+        return res.json({
+            status : 200,
+            msg : "اطلاعات شما با موفقیت حذف شد",
+            data : deleteUser
+        })
+        
+    } catch (error) {
+        console.log(error)
+        return res.json({
+            status : 404 ,
+            msg : "عملیات کنترلر با خطا مواجه شد"
+        })  
+    }
+}
+
