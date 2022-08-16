@@ -48,18 +48,25 @@ export default {
       user_info: {
         username: "",
         password: "",
-        checked: false,
+        
       },
     };
   },
-  methods: {
-    login() {
-      console.log("username:", this.user_info.username);
-      console.log("pass:", this.user_info.password);
-      console.log("checked:", this.user_info.checked);
-      alert("ورود شما موفقیت آمیز بود");
+ methods: {
+  loggin() {
+      this.$axios
+        .post("", this.user_info)
+        .then((response) => {
+          console.log(response.user_info);
+          
+        })
+
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
-};
+  }
+
 </script>
 <style></style>
