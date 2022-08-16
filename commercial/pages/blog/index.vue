@@ -1,7 +1,6 @@
 <template>
   <div>
     <app_header></app_header>
-
     <div class="p-5">
       <div class="my-3">
         <div class="d-flex justify-content-center p-2">
@@ -25,12 +24,9 @@
         <div class="col-md-6">
           <img
             src="https://license-market.ir/uploads/image/rootimage/1157/6972a1457a78c1d1a462cd9fb2459aec.jpg?w=700&h=700&q=90"
-            alt=""
-            class="img-fluid"
-          />
+            alt="" class="img-fluid" />
         </div>
       </div>
-
       <div>
         <div class="my-3">
           <div class="d-flex justify-content-center p-2">
@@ -38,7 +34,6 @@
           </div>
           <h2 class="text-center">مطالب وبلاگ</h2>
         </div>
-
         <div class="row p-5">
           <div class="col-md-4" v-for="post in posts" :key="post.id">
             <img :src="post.image" alt="" class="card-img-top" />
@@ -48,11 +43,9 @@
         </div>
       </div>
     </div>
-
     <app_footer></app_footer>
   </div>
 </template>
-
 <script>
 import app_header from "@/components/header/index.vue";
 import app_footer from "@/components/footer";
@@ -135,7 +128,6 @@ export default {
   },
 };
 </script>
-
 <style>
 .vr {
   width: 1px;

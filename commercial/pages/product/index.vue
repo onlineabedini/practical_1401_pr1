@@ -3,7 +3,6 @@
     <product_grid></product_grid>
   </div>
 </template>
-
 <script>
 import product_grid from '@/components/commerce_components/products_grid';
 export default {
@@ -12,6 +11,4 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
+<style></style>

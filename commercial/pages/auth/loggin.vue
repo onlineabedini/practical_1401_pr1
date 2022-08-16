@@ -18,36 +18,18 @@
               <!--  -->
               <form>
                 <div class="form-group mb-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="username"
-                    v-model="user_info.username"
-                  />
+                  <input type="text" class="form-control" placeholder="username" v-model="user_info.username" />
                 </div>
                 <div class="form-group mb-2">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="رمز عبور"
-                    v-model="user_info.password"
-                  />
+                  <input type="password" class="form-control" id="password" placeholder="رمز عبور"
+                    v-model="user_info.password" />
                 </div>
                 <div class="form-group mb-2">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    v-model="user_info.checked"
-                  />
+                  <input type="checkbox" class="custom-control-input" v-model="user_info.checked" />
                   <label> مرا به خاطر بسپار </label>
                 </div>
                 <div class="form-group mb-2 d-grid p-2">
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-block"
-                    @click="login()"
-                  >
+                  <button type="submit" class="btn btn-primary btn-block" @click="login()">
                     ورود
                   </button>
                 </div>
@@ -59,7 +41,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -81,6 +62,4 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
+<style></style>

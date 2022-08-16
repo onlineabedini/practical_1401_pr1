@@ -22,13 +22,7 @@
     <div class="row bg-white p-4"></div>  
   </div>
 </template>
-
 <script>
-export default {
-
-}
+export default {}
 </script>
-
-<style>
-
-</style>
+<style></style>

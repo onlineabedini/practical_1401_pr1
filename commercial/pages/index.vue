@@ -7,7 +7,6 @@
     <app_footer></app_footer>
   </div>
 </template>
-
 <script>
 import warnning from '@/components/warrning.vue'
 import app_header from '@/components/header/index.vue'
@@ -22,10 +21,6 @@ export default {
     single_card,
     app_footer,
   }
-
 }
 </script>
-
-<style>
-
-</style>
+<style></style>
