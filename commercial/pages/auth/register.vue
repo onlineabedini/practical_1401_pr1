@@ -48,7 +48,7 @@ export default {
       user: {
         first_name: "",
         last_name: "",
-        first_name: "dsadsd",
+        first_name: "",
         last_name:"",
         email: "",
         password: "",
