@@ -45,7 +45,7 @@
 export default {
   data() {
     return {
-      user: {
+      user_data: {
         first_name: "",
         last_name: "",
         first_name: "",
