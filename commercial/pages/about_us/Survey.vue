@@ -18,12 +18,8 @@
                 <p class="m-3">↵ Enter را فشار دهید</p>
             </div>
         </div>
-
     </div>
-
-
 </template>
-
 <script>
 export default {
 

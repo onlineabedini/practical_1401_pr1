@@ -5,59 +5,40 @@
       <a href="#" class="row text-decoration-none">
         <div class="col-md-4 p-1 ">
           <div class="a1">
-            <single_grid_pic
-              :item="items[0]"
-              img_position="top"
-              class="d-table p-4"
-            ></single_grid_pic>
+            <single_grid_pic :item="items[0]" img_position="top" class="d-table p-4"></single_grid_pic>
           </div>
         </div>
         <div class="col-md-8 p-1 ">
           <div class="b1">
             <single_grid_pic :item="items[1]" img_position="left" class="p-2 "></single_grid_pic>
-            <div class="btn rounded-pill btn-light d-grid col-md-3 ">
-              مشاهده و خرید
-            </div>
+            <div class="btn rounded-pill btn-light d-grid col-md-3 ">مشاهده و خرید</div>
           </div>
         </div>
       </a>
       <a href="#" class="row text-decoration-none">
         <div class="col-md-8 p-1">
           <div class="c1">
-            <single_grid_pic
-              :item="items[2]"
-              img_position="left"
-              class="d-flex justify-content-center"
-            ></single_grid_pic>
-            <div class="btn rounded-pill btn-light d-grid col-md-3 ">
-              مشاهده و خرید
-            </div>
+            <single_grid_pic :item="items[2]" img_position="left" class="d-flex justify-content-center">
+            </single_grid_pic>
+            <div class="btn rounded-pill btn-light d-grid col-md-3 ">مشاهده و خرید</div>
           </div>
         </div>
         <div class="col col-md-4 p-1">
           <div class="d1">
-            <single_grid_pic
-              :item="items[3]"
-              img_position="top"
-              class="d-table p-5"
-            ></single_grid_pic>
+            <single_grid_pic :item="items[3]" img_position="top" class="d-table p-5"></single_grid_pic>
           </div>
         </div>
       </a>
     </div>
-
     <!-- col2 -->
     <a href="#" class="col-md-4 p-2 text-decoration-none">
       <div class="f1">
         <single_grid_pic :item="items[4]" img_position="left" class="d-table p-5"></single_grid_pic>
-        <div class="btn rounded-pill btn-light d-grid col-md-4 ">
-          مشاهده و خرید
-        </div>
+        <div class="btn rounded-pill btn-light d-grid col-md-4 ">مشاهده و خرید</div>
       </div>
     </a>
   </div>
 </template>
-
 <script>
 import single_grid_pic from "@/components/img_grid/single_grid_pic.vue";
 export default {
@@ -102,14 +83,12 @@ export default {
   },
 };
 </script>
-
 <style>
 .a1 {
   background-color: #c2c2c2;
   border-radius: 10px;
   height: 100%;
 }
-
 .b1 {
   background-color: #f58894;
   border-radius: 10px;
@@ -131,5 +110,4 @@ export default {
   border-radius: 10px;
   vertical-align: top;
 }
-
 </style>
