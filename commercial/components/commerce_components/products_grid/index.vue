@@ -27,7 +27,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import single_card from "@/components/commerce_components/products_grid/single_card.vue";
 export default {
@@ -66,14 +65,11 @@ export default {
   },
 };
 </script>
-
 <style>
 .zoom-hover :hover {
   opacity: 0.7;
   transform: scale(1.02);
   transition: all 0.2s ease;
 }
-a {
-  text-decoration: none;
-}
+a {text-decoration: none;}
 </style>
