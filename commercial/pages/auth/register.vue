@@ -4,7 +4,7 @@
       <h2 class="mx-4 pt-5 text-center-right container-lg">ثبت نام</h2>
       <div class="d-flex pt-3 text-md-end fs-5">
         <p class="mx-4">حساب دارید؟</p>
-        <p class="mx-2 text-decoration-underline text-danger">وارد شوید</p>
+         <p class="mx-2 text-decoration-underline text-danger">وارد شوید</p>
       </div>
       <div class="mb-3 w-50 p-3 ">
         <label for="exampleFormControlInput1" class="form-label"></label>
@@ -74,4 +74,5 @@ export default {
 };
 </script>
 <style>
+
 </style>
