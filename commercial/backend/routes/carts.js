@@ -1,33 +1,33 @@
 const express = require('express');
-const router1 = express.Router();
+const router4 = express.Router();
 
 //require user validation from validators
-const {product_validate , get_one_validate , update_validate , delete_validate} = require('../validators/products');
+const {get_one_validate , update_validate , delete_validate} = require('../validators/carts');
 
 //require controller
-const product = require('../controllers/products')
+const cart = require('../controllers/carts')
 
 //=============================================================== روت های ثبت اطلاعات ================================================
 
-router1.post('/product/create' , product_validate , product.create)
+router4.post('/cart/create' , cart.create)
 
 //================================================================روت های دریافت اطلاعات==============================================
 
 //get all users information router
-router1.get('/products/all' , product.get_all)
+router4.get('/carts/all' , cart.get_all)
 
 //get user information by id router
-router1.get('/product/one/:productId', get_one_validate , product.get_one)
+router4.get('/cart/one/:articleId', get_one_validate , cart.get_one)
 
 //================================================================روت های آپدیت اطلاعات===============================================
 
 //update user information router
-router1.put('/product/update' , update_validate , product.update)
+router4.put('/cart/update' , update_validate , cart.update)
 
 //================================================================روت های حذف اطلاعات===============================================
 
 //delete user information router
-router1.delete('/product/delete/:productId', delete_validate , product.delete)
+router4.delete('/cart/delete/:articleId', delete_validate , cart.delete)
 
 //Exports
-module.exports = router1
+module.exports = router4

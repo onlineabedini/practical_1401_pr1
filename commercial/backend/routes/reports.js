@@ -1,33 +1,30 @@
 const express = require('express');
-const router1 = express.Router();
+const router2 = express.Router();
 
 //require user validation from validators
-const {product_validate , get_one_validate , update_validate , delete_validate} = require('../validators/products');
+const {update_validate , delete_validate} = require('../validators/reports');
 
 //require controller
-const product = require('../controllers/products')
+const ticket = require('../controllers/reports')
 
 //=============================================================== روت های ثبت اطلاعات ================================================
 
-router1.post('/product/create' , product_validate , product.create)
+router2.post('/ticket/create' , ticket.create)
 
 //================================================================روت های دریافت اطلاعات==============================================
 
 //get all users information router
-router1.get('/products/all' , product.get_all)
-
-//get user information by id router
-router1.get('/product/one/:productId', get_one_validate , product.get_one)
+router2.get('/tickets' , ticket.get)
 
 //================================================================روت های آپدیت اطلاعات===============================================
 
 //update user information router
-router1.put('/product/update' , update_validate , product.update)
+router2.put('/ticket/answer' , update_validate , ticket.update)
 
 //================================================================روت های حذف اطلاعات===============================================
 
 //delete user information router
-router1.delete('/product/delete/:productId', delete_validate , product.delete)
+router2.delete('delete/:userId ', delete_validate , ticket.delete)
 
 //Exports
-module.exports = router1
+module.exports = router2

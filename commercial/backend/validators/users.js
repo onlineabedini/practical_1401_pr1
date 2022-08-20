@@ -161,7 +161,6 @@ exports.user_validate_login = async (req, res, next) => {
 exports.get_one_validate = (req , res , next) => {
    try {
     let userId = req.params.userId
-    console.log(typeof(userId))
     if(userId && !isNumber(userId)){
         return res.json({res: 404 , error: 'شناسه باید عدد باشد' })
     }
@@ -215,25 +214,22 @@ exports.update_validate = async(req , res , next) => {
 exports.delete_validate = async(req , res , next) => {
         try {
                     //these are vars
-            const id = req.params.id
+            const userId = req.params.userId
+            const userId1 = parseInt(req.params.userId)
 
-            if(!id){
-                return res.json({res : 400 , error :' آیدی را وارد کنید'})
-            }
-
-            if(id && !isNumber(id)){
+            if(userId && !isNumber(userId)){
                 return res.json({res : 400 , error :'آیدی باید عدد باشد'})
                }
 
             //find informations in database
             let trueId = await db.User.findFirst({
                 where:{
-                    id: id,
+                    id: userId1,
                 }
             }) 
             //validate dont exist id
 
-            if(id && !trueId){
+            if(userId1 && !trueId){
                 return res.json({res : 400 , error :'کاربری با این آیدی وجود ندارد'})
             }
             next()

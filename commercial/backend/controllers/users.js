@@ -143,7 +143,7 @@ exports.update = async(req, res) => {
 //delete user controller
 exports.delete = async(req, res) => {
     try {
-        let userId = parseInt(req.params.id)
+        let userId = parseInt(req.params.userId)
         let deleteUser = await db.User.delete({
             where:{
                 id : userId,

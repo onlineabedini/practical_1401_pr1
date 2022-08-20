@@ -33,7 +33,7 @@ router.put('/user/update' , update_validate , user.update)
 //================================================================روت های حذف اطلاعات===============================================
 
 //delete user information router
-router.delete('/user/delete/:userId ', delete_validate , user.delete)
+router.delete('/user/delete/:userId', delete_validate , user.delete)
 
 //Exports
 module.exports = router

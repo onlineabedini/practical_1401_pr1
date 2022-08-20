@@ -5,52 +5,33 @@ require('dotenv').config()
 
 //create product controller
 exports.create = async(req, res) => {
-const title  = req.body.title 
-const subTitle = req.body.subTitle
-const price  = parseInt(req.body.price) 
-const  discount = parseInt(req.body.discount)
-const description = req.body.description
-const category  = req.body.category
-const  image  = req.body.image
-  let newProduct = await db.Product.create({
+const subject  = req.body.subject 
+const content = req.body.content 
+
+  let newArticle = await db.Article.create({
         data : {
-            title  : title ,
-            subTitle : subTitle,
-            price  : price ,
-            discount : discount,
-            description : description,
-            category  : category,
-            image  : image,
+            subject  : subject ,
+            content : content,
         }
     })
     return res.json({
         status : 200,
-        msg : "محصول شما با موفقیت ثبت شد  ",
-        data : newProduct
+        msg : "مقاله شما با موفقیت ثبت شد  ",
+        data : newArticle
     })
 }
 
 exports.get_all = async(req , res) => {
     try {
-        let product = await db.Product.findMany({
-            select:{
-                id     : true ,
-                title  : true ,
-                subTitle : true,
-                price  : true,
-                discount : true,
-                description : true,
-                category  : true,
-                image  : true
-            }
+        let article = await db.Article.findMany({
         
         })
-        if(!product){
-            return res.json({res: 404 , error: 'محصولی یافت نشد' })
+        if(!article){
+            return res.json({res: 404 , error: 'مقاله یافت نشد' })
         }
         return res.json({res: 200 ,
             msg:'اطلاعات تمامی محصولات بدین شرح است',
-            data: product})
+            data: article})
 
     } catch (error) {
         console.log(error)
@@ -64,18 +45,18 @@ exports.get_all = async(req , res) => {
 
 exports.get_one = async(req , res) => {
     try {
-        let productId = parseInt(req.params.productId)
-        let product = await db.Product.findFirst({
+        let articleId = parseInt(req.params.articleId)
+        let article = await db.Article.findFirst({
             where:{
-             id: productId
+             id: articleId
             }
         })
-        if(!product){
-            return res.json({res: 404 , error: 'کالایی با این شناسه یافت نشد' })
+        if(!article){
+            return res.json({res: 404 , error: 'مقاله با این شناسه یافت نشد' })
         }
         return res.json({res: 200 ,
-            msg : `اطلاعات کالا با شناسه ${productId} بدین شرح است`,
-            data: product})
+            msg : `اطلاعات کالا با شناسه ${articleId} بدین شرح است`,
+            data: article})
 
     } catch (error) {
         console.log(error)
@@ -89,16 +70,16 @@ exports.get_one = async(req , res) => {
 //delete user controller
 exports.delete = async(req, res) => {
     try {
-        let productId = parseInt(req.params.productId)
-        let deleteProduct = await db.Product.delete({
+        let articleId = parseInt(req.params.articleId)
+        let deleteArticle = await db.Article.delete({
             where:{
-                id : productId,
+                id : articleId,
             }
         })
         return res.json({
             status : 200,
             msg : "اطلاعات شما با موفقیت حذف شد",
-            data : deleteProduct
+            data : articleId
         })
         
     } catch (error) {
