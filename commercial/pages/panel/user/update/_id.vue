@@ -22,34 +22,26 @@
   </div>
 </template>
 <script>
-import { all } from 'q';
-
 export default {
   data() {
     return {
-      user: {
-        name: "",
-        family_name: "",
+      user_data: {
+        first_name:"",
+        last_name: "",
         email: "",
-        pass: "",
-        repeate_pass: "",
+        password: "",
+        confirm_password: "",
       },
     };
   },
   methods: {
     login() {
       this.$axios
-        .get("http://localhost:8080/api/users/all", this.user_data)
-        .then((response) => {
-          console.log(response.user_data);
-          this.user_data=response.data;
-          })
-        .update("http://localhost:8080/api/user/update", this.user_data)
+        .post("http://localhost:8080/api/user/update", this.user_data)
         .then((response) => {
           console.log(response.user_data);
           this.user_data=response.data;
           });
-        
       alert(" تغیر اطلاعات موفقیت آمیز بود");
     },
   },
