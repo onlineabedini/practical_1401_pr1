@@ -25,6 +25,7 @@
 export default {
   data() {
     return {
+      id:1,
       user_data: {
         first_name:"",
         last_name: "",
@@ -34,17 +35,23 @@ export default {
       },
     };
   },
-  methods: {
-    login() {
-      this.$axios
-        .post("http://localhost:8080/api/user/update", this.user_data)
-        .then((response) => {
-          console.log(response.user_data);
-          this.user_data=response.data;
-          });
-      alert(" تغیر اطلاعات موفقیت آمیز بود");
-    },
+  mounted(){
+    this.id = this.$route.params.id
   },
+  methods:{
+    update() {
+      this.$axios.put("" +this.id).then(
+        response => {
+          console.log(response)
+        }
+      )
+      .catch(
+        error => {
+          consel.log(error)
+        }
+      )
+    },
+  }
 };
 </script>
 <style>
