@@ -95,30 +95,27 @@ exports.delete = async(req, res) => {
 exports.update = async(req, res) => {
     try {
         const id = parseInt(req.body.id)
-        let updateProduct = await db.Product.update({
+        let subject = req.body.subject
+        let content = req.body.content
+        let updateProduct = await db.Article.update({
             where:{
                 id : id
             },
             data:{
-                title  : req.body.title,
-                subTitle : req.body.subTitle,
-                price  : req.body.price,
-                discount : req.body.discount,
-                description : req.body.description,
-                category  : req.body.category,
-                image  : req.body.image,
+                subject: subject,
+                content: content
             }    
         })
             return res.json({
                 status : 200,
-                msg : "اطلاعات شما با موفقیت آپدیت شد",
+                msg : "اطلاعات مقاله شما با موفقیت بروزرسانی شد",
                 data : updateProduct
             }) 
     } catch (error) {
         console.log(error)
         return res.json({
             status : 404 ,
-            msg : "عملیات کنترلر با خطا مواجه شد"
+            msg : "عملیات بروزرسانی مقاله با خطا مواجه شد"
         })  
     }
 }

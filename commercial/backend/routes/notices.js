@@ -1,33 +1,30 @@
 const express = require('express');
-const router3 = express.Router();
+const router = express.Router();
 
 //require user validation from validators
-const {get_one_validate , update_validate , delete_validate} = require('../validators/articles');
+// const {update_validate , delete_validate} = require('../validators/reports');
 
 //require controller
-const article = require('../controllers/articles')
+const notices = require('../controllers/notices')
 
 //=============================================================== روت های ثبت اطلاعات ================================================
 
-router3.post('/article/create' , article.create)
+router.post('/notices/create' , notices.create)
 
 //================================================================روت های دریافت اطلاعات==============================================
 
 //get all users information router
-router3.get('/articles/all' , article.get_all)
-
-//get user information by id router
-router3.get('/article/one/:articleId', get_one_validate , article.get_one)
+router.get('/notices' , notices.getAll)
 
 //================================================================روت های آپدیت اطلاعات===============================================
 
 //update user information router
-router3.put('/article/update' , update_validate , article.update)
+router.put('/notices/update' ,  notices.update)
 
 //================================================================روت های حذف اطلاعات===============================================
 
-//delete user information router
-router3.delete('/article/delete/:articleId', delete_validate , article.delete)
+// delete user information router
+router.delete('/notice/:id', notices.delete)
 
 //Exports
-module.exports = router3
+module.exports = router

@@ -92,3 +92,9 @@ model Cart{
     products          Product           @relation("PRODUCT_CART" , fields: [productId] , references: [id])
     payment           Payment[]         @relation("CART_PAYMENT")     
 }
+//===================================================================================================== Noticess
+model Noticess {
+    id              Int                 @default(autoincrement()) @id
+    title           String
+    createdAt       DateTime            @default(now())  @db.Timestamptz(3)
+}

@@ -27,7 +27,7 @@ exports.get_one_validate = (req , res , next) => {
  exports.update_validate = async(req , res , next) => {
     try {
         //these are vars
-        const id = req.body.id
+        const id = parseInt(req.body.id)
         //validate dont exist id
         if(!id){
             return res.json({res : 400 , error :' آیدی را وارد کنید'})
@@ -41,10 +41,9 @@ exports.get_one_validate = (req , res , next) => {
         if(isArticle){
             next()
         }else{
-            return res.json({res: 400, error: " شناسه نادرست است."})
+            return res.json({res: 400, error: "شناسه وارد شده در دیتا بیس وجود ندارد."})
         }
 
-  
     } catch (error) {
         console.log(error)
         return res.json({
