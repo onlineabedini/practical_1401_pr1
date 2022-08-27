@@ -38,7 +38,6 @@ export default {
         .post("http://localhost:8080/api/user/create", this.user_data)
         .then((response)=>{
           console.log(response.user_data)
-          this.user_data=response.data;
     })
         .catch((error)=>{
           console.log(error);

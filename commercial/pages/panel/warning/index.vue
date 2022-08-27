@@ -9,13 +9,11 @@ export default {
       alert: {},
     };
   },
-  mounted() {
-    this.id = this.$route.params.id;
-  },
+  
   methods: {
     all_alert() {
       this.$axios
-        .get("" + this.id)
+        .get("")
         .then(this.warning=response.data) 
         
         .catch((erorr) => {
