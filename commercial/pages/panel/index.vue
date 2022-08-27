@@ -1,15 +1,21 @@
 <template>
 <div>
+    <index></index>
   
 </div>
   
 </template>
 
 <script>
+import panel_menu from '@/components/menu/panel_menu/index'
+
 
 
 export default {
-    layout: 'panels',
+   components:{
+       index,
+      
+   }
 
 };
 </script>
