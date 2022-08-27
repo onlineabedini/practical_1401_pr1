@@ -19,7 +19,7 @@ export default {
         .then(this.warning=response.data) 
         
         .catch((erorr) => {
-          consol.log(erorr);
+       consol.log(erorr);
         });
     },
   },
