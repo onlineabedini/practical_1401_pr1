@@ -11,6 +11,9 @@
           برای اطلاع از بروزرسانی افزونه ها، در کانال تلگرام ?? عضو شوید
         </p>
       </div>
+      <div class="d-flex justify-content-end mx-4 pt-2">
+        <button type="button" class="btn btn-primary">تایید اطلاعات</button>
+      </div>
     </div>
   </div>
 </template>
