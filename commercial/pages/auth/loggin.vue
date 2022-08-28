@@ -50,6 +50,7 @@ export default {layout:"panels",
         password: "",
         
       },
+    
     };
   },
  methods: {
