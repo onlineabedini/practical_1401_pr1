@@ -69,4 +69,5 @@ export default {layout:"panels",
 };
 </script>
 
-<style></style>
+<style>
+</style>
