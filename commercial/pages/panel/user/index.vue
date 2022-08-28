@@ -20,7 +20,7 @@
 </template>
 
 <script>
-export default {
+export default {layout:"panels",
   data() {
     return {
       data_list: [],

@@ -42,7 +42,7 @@
   </div>
 </template>
 <script>
-export default {
+export default {layout:"panels",
   data() {
     return {
       user_info: {
