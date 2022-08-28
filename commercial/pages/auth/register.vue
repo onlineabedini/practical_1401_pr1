@@ -53,6 +53,7 @@ export default {layout:"panels",
         address: "",
         phone_number: "",
       },
+      
     };
   },
   methods: {
