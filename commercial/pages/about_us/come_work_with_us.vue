@@ -102,7 +102,7 @@
     </div>
 </template>
 <script>
-export default {}
+export default {layout:"panels",}
 </script>
 <style scoped>
 .t5 {margin-inline: 200px;}
