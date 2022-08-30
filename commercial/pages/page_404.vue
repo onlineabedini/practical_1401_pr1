@@ -21,6 +21,7 @@
 </template>
 <script>
 export default {layout:"panels",}
+
 </script>
 <style >
 .a1 {margin-top: 250px;}
