@@ -23,6 +23,6 @@
   </div>
 </template>
 <script>
-export default {}
+export default {layout:"panels",}
 </script>
 <style></style>
