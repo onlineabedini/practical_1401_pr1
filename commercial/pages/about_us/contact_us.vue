@@ -98,7 +98,7 @@
     </div>
 </template>
 <script>
-export default {}
+export default {layout:"panels",}
 </script>
 <style scoped>
 .t1 {margin-inline: 200px;}
