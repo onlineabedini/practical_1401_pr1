@@ -75,7 +75,7 @@ export default {
   methods:{
     get_user() {
       this.$axios
-      .get("http://localhost:8080/api/users/all" ,this.user_data_update)
+      .get("http://localhost:8080/api/users/all" +this.id)
       .then((response) => {
         this.user_data_update=response.data;
           console.log(this.user_data_update);
