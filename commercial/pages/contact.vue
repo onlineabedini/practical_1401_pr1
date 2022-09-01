@@ -3,20 +3,17 @@
    <h3 class="my-4 pt-5 text-center-right container-lg">ارتباط با ما</h3>
    <div class="border border-3 shadow rounded-3 p-3">
       <div class="row px-3 pt-3 d-flex justify-content-center">
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="نام" v-model="user_info.name">
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="نام خانوادگی" v-model="user_info.lastname">
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="ایمیل" v-model="user_info.email">
-     </div>
- 
-     <div class="row px-3 pb-3 d-flex justify-content-center">
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="شماره تلفن همراه" v-model="user_info.phonenumber" >
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="پیام خود را وارد کنید" v-model="user_info.message">
-        <input class="co-12 col-md-3 m-3" type="text" placeholder="">
-     </div>
-     <div class="mx-3">
-       <button class="btn btn-primary mx-3" type="button" @click="submit()">
-        ثبت
-       </button>
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="نام" v-model="user_info.name">
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="نام خانوادگی" v-model="user_info.lastname">
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="ایمیل" v-model="user_info.email">
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="شماره تلفن همراه" v-model="user_info.phonenumber" >
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="پیام خود را وارد کنید" v-model="user_info.message">
+        <input class="col-4 col-md-3 m-3" type="text" placeholder="">
+      </div>
+      <div class="mx-3">
+        <button class="btn btn-primary mx-3" type="button" @click="submit()">
+         ثبت
+        </button>
     </div>
     
    </div>
