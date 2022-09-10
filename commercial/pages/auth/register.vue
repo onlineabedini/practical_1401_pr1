@@ -1,134 +1,118 @@
 <template>
-  <div>
-    <div class="container">
-      <h2 class="mx-4 pt-5 text-center-right container-lg">ثبت نام</h2>
-      <div class="d-flex pt-3 text-md-end fs-5">
-        <p class="mx-4">حساب دارید؟</p>
-        <p class="mx-2 text-decoration-underline text-danger">وارد شوید</p>
-      </div>
-      <div class="row bg-white">
-        <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
-            <input
-              type="text"
-              class="form-control"
-              v-model="user_data.first_name"
-              id="exampleFormControlInput1"
-              placeholder="نام"
-            />
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
-            <input
-              type="text"
-              class="form-control"
-              v-model="user_data.last_name"
-              id="exampleFormControlInput1"
-              placeholder=" نام خانوادگی"
-            />
-          </div>
-        </div>
-        <div class="col-3"></div>
-      </div>
-      <div class="row bg-white">
-        <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
-            <input
-              type="email"
-              class="form-control"
-              v-model="user_data.email"
-              id="exampleFormControlInput1"
-              placeholder="ایمیل"
-            />
-          </div>
-        </div>
-          <div class="col-12 col-md-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"></label>
-              <input
-                type="password"
-                class="form-control"
-                v-model="user_data.password"
-                id="exampleFormControlInput1"
-                placeholder="پسورد"
-              />
+    <div>
+        <div class="main_div">
+            <div class="title_div text-end py-2">
+                <h3>ساخت حساب کاربری</h3>
             </div>
-          </div>
-     
-            <div class="col-3"></div>
-          </div>
-          <div class="row bg-white">
-          <div class="col-12 col-md-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"></label>
-              <input
-                type="address"
-                class="form-control"
-                v-model="user_data.address"
-                id="exampleFormControlInput1"
-                placeholder="آدرس"
-              />
+            <!-- main section -->
+            <div class="info_div rtl p-5">
+                <!--  -->
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">نام و نام خانوادگی</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            v-model="register_data.full_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">نام کاربری</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            v-model="register_data.username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">شماره تماس</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            v-model="register_data.phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">پست الکترونیکی</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            v-model="register_data.email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">گذرواژه</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            v-model="register_data.password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">تکرار گذرواژه</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" v-model="re_password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">آدرس منزل</label>
+                        <textarea rows="3" class="form-control" v-model="register_data.address"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <nuxt-link class="form-text" to="/auth/login">قبلا ثبت نام کرده اید؟</nuxt-link>
+                    </div>
+                    <button type="button" class="btn btn-primary" @click="register()">ثبت نام</button>
+                </form>
             </div>
-          </div>
-         <div class="col-12 col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
-            <input
-              type="number"
-              class="form-control"
-              v-model="user_data.phone_number"
-              id="exampleFormControlInput1"
-              placeholder="شماره موبایل"
-            />
-          </div>
         </div>
-      <div class="col-5"></div>
-          </div>
-    
-    <div class="d-grid gap-2 col-6 mx-4 w-50 p-3">
-      <button class="btn btn-primary" type="button" @click="submit()">
-        ثبت نام
-      </button>
     </div>
-    </div>
-  </div>
 </template>
 <script>
 export default {
-  layout: "panels",
-  data() {
-    return {
-      user_data: {
-        first_name: "",
-        last_name: "",
-        email: "",
-        password: "",
-        address: "",
-        phone_number: "",
-      },
-    };
-  },
-  methods: {
-    submit() {
-      this.$axios
-        .post("", this.user_data)
-        .then((response) => {
-          console.log(response.user_data);
-          this.user_data = response.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-      alert("ثبت نام انجام شد");
-      // axios => send to backend
-      // response <= backend
+    data() {
+        return {
+            register_data: {
+                full_name: '',
+                username: '',
+                phone: '',
+                email: '',
+                password: '',
+                address: '',
+            },
+            re_password: ''
+        }
     },
-  },
-};
+    methods: {
+        register() {
+            let is_valid = this.is_valid()
+
+            if (is_valid == true) {
+                this.$axios.post('/auth/register', this.register_data).then(
+                    (res) => {
+                        alert('ثبت نام موفقیت آمیز بود')
+                        this.register_data = {}
+                        this.$router.push('/auth/login')
+                    },
+                    (err) => {
+                        alert('اطلاعات وارد شده غلط است')
+                        this.register_data = {}
+                        this.re_password = ''
+                    }
+                ).catch(err => {
+                    alert('ارتباط با سرور برقرار نشد')
+                })
+            } else {
+                alert('لطفا همه فیلد ها را به درستی وارد کنید')
+            }
+        },
+
+        is_valid() {
+            if (this.register_data.full_name === '') return false;
+            if (this.register_data.username === '') return false;
+            if (this.register_data.phone === '') return false;
+            if (this.register_data.email === '') return false;
+            if (this.register_data.password === '') return false;
+            if (this.register_data.address === '') return false;
+
+            if (this.register_data.password !== this.re_password) return false;
+            return true;
+        }
+    }
+}
 </script>
-<style>
+<style scoped>
+.main_div {
+    /*  */
+}
+
+.title_div {
+    /*  */
+}
+
+.info_div {
+    /*  */
+}
 </style>

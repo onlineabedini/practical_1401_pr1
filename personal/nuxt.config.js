@@ -11,13 +11,12 @@ export default {
             { hid: 'description', name: 'description', content: '' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' },
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ['@/assets/css/bootstrap.min.css', '@/assets/css/style.css', '@/assets/css/main.css'],
+    css: ['@/assets/css/bootstrap.min.css', '@/assets/css/main.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
@@ -35,7 +34,9 @@ export default {
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {},
+    axios: {
+        baseURL: 'http://localhost:8080/api'
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}

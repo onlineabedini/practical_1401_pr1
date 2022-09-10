@@ -1,75 +1,117 @@
 <template>
-  <div>
-    <div class="text-center p-3">
-      <h3>سرویس های پخش فیلم و سریال</h3>
+    <div>
+        <div class="py-5">
+            <div class="title_div mb-3" v-if="grid_title">
+                <h2>{{ grid_title }}</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="row m-0 p-0" v-if="product_list">
+                <div class="col-12 col-md-6 col-lg-3 p-1 text-center" v-for="product in product_list"
+                    :key="product.title">
+                    <single_product :title="product.title" :price="product.price" :img_url="product.img_url"
+                        :sec_img_url="product.sec_img_url" :discount="product.discount"
+                        @add_to_cart="add_to_cart(product)" @edit_product="edit_product(product._id)"
+                        @open_product="open_product(product._id)">
+                    </single_product>
+                </div>
+            </div>
+            <div v-else>
+                هیچ محصولی وجود ندارد
+            </div>
+        </div>
     </div>
-    <div class="row p-5 mx-5">
-      <a href="#" class="col-md-3">
-        <div class="zoom-hover">
-          <single_card :product="products[0]"></single_card>
-        </div>
-      </a>
-      <a href="#" class="col-md-3">
-        <div class="zoom-hover">
-          <single_card :product="products[1]"></single_card>
-        </div>
-      </a>
-      <a href="#" class="col-md-3">
-        <div class="zoom-hover">
-          <single_card :product="products[2]"></single_card>
-        </div>
-      </a>
-      <a href="#" class="col-md-3">
-        <div class="zoom-hover">
-          <single_card :product="products[3]"></single_card>
-        </div>
-      </a>
-    </div>
-  </div>
 </template>
 <script>
-import single_card from "@/components/commerce_components/products_grid/single_card.vue";
+import single_product from './single_card'
 export default {
-  components: {
-    single_card,
-  },
-  data() {
-    return {
-      products: [
-        {
-          cardTitle: "Product 1",
-          price: "200,000",
-          cardImage:
-            "https://license-market.ir/uploads/image/rootimage/834/de93d8915c33a52d93110b879648f139.png?w=600&h=600&q=90",
+    props: ['grid_cards'],
+    data() {
+        return {
+            product_list: [],
+            // grid data
+            grid_title: 'محصولات',
+        }
+    },
+    components: {
+        single_product
+    },
+    mounted() {
+        this.define_title()
+        this.get_all_products()
+    },
+    methods: {
+        define_title() {
+            switch (this.grid_cards) {
+                case 'all':
+                    this.grid_title = 'همه محصولات'
+                    break;
+
+                case 'new':
+                    this.grid_title = 'محصولات جدید'
+                    break;
+
+                case 'popular':
+                    this.grid_title = 'پرطرفدار'
+                    break;
+
+                case 'film':
+                    this.grid_title = 'فیلم و سریال'
+                    break;
+
+                case 'account':
+                    this.grid_title = 'اکانت شبکه های اجتماعی'
+                    break;
+
+                case 'music':
+                    this.grid_title = 'موسیقی'
+                    break;
+
+                case 'education':
+                    this.grid_title = 'آموزشی'
+                    break;
+
+                case 'special':
+                    this.grid_title = 'محصولات کاربردی ویژه'
+                    break;
+            }
         },
-        {
-          cardTitle: "Product 2",
-          price: "300,000",
-          cardImage:
-            "https://license-market.ir/uploads/image/rootimage/923/c92abe827f215a8fedf20da320cf4c30.jpg?w=600&h=600&q=90",
+        get_all_products() {
+            this.$axios.get('/product/get_by/' + this.grid_cards).then(
+                res => {
+                    this.product_list = res.data.data
+                },
+                err => {
+                    alert('دریافت اطلاعات با مشکل مواجه شد')
+                }
+            )
+
         },
-        {
-          cardTitle: "Product 3",
-          price: "400,000",
-          cardImage:
-            "https://license-market.ir/uploads/image/rootimage/1138/168cac051a67d429ebbf5ac2ff3aaa2c.jpg?w=600&h=600&q=90",
+        add_to_cart(product) {
+            let cart_product = {
+                title: product.title,
+                price: product.price
+            }
+
+            this.$store.commit('add_to_cart', cart_product);
         },
-        {
-          cardTitle: "Product 4",
-          price: "500,000",
-          cardImage:
-            "https://license-market.ir/uploads/image/rootimage/1229/f7ff5a8927eb359232ef84ff8cf49f77.jpg?w=600&h=600&q=90",
+        edit_product(id) {
+            this.$router.push('/panel/product/update/' + id)
         },
-      ],
-    };
-  },
-};
-</script>
-<style>
-.zoom-hover :hover {
-  opacity: 0.7;
-  transform: scale(1.02);
-  transition: all 0.2s ease;
+        open_product(id) {
+            this.$router.push('/product/single_product/' + id)
+        }
+    },
 }
-a {text-decoration: none;}
+</script>
+<style scoped>
+    .title_div{
+        display: flex;
+        position: relative;
+    }
+
+    .title_div h2 {
+        background-color: white;
+        padding-left: 10px;
+        z-index: 1;
+    }
 </style>

@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'فروشگاه مطالعاتی آی آر نود',
+        title: 'وبسایت فروشگاهی مطالعاتی آی آر نود',
         htmlAttrs: {
             lang: 'en'
         },
@@ -11,12 +11,12 @@ export default {
             { hid: 'description', name: 'description', content: '' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ['@/assets/css/bootstrap.min.css', '@/assets/css/style.css', '@/assets/css/main.css','@/assets/fontawesome/css/all.min.css'],
+    css: ['@/assets/bootstrap/css/bootstrap.min.css', '@/assets/css/main.css', '@/assets/css/template.css', '@/assets/font-awesome/css/all.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
@@ -34,7 +34,9 @@ export default {
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {},
+    axios: {
+        baseURL: 'http://localhost:8080/api'
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {}

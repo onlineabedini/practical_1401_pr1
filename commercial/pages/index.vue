@@ -1,26 +1,132 @@
 <template>
   <div>
-    <warnning></warnning>
-    <app_header></app_header>
-    <img_grids></img_grids>
-    <single_card></single_card>
-    <app_footer></app_footer>
+
+    <!-- img grid -->
+    <div>
+      <image_grid></image_grid>
+    </div>
+
+    <!-- product grid -->
+    <div>
+      <product_grid grid_cards="popular"></product_grid>
+    </div>
+
+    <!-- product grid -->
+    <div>
+      <product_grid grid_cards="film"></product_grid>
+    </div>
+
+    <!-- product grid -->
+    <div>
+      <product_grid grid_cards="music"></product_grid>
+    </div>
+
+    <!-- product grid -->
+    <div>
+      <product_grid grid_cards="special"></product_grid>
+    </div>
+
+    <!-- product grid -->
+    <div>
+      <product_grid grid_cards="education"></product_grid>
+    </div>
+
+    <!-- comment section -->
+    <div>
+      <comments_grid></comments_grid>
+    </div>
+
+    <!-- articles grid -->
+    <div>
+      <article_grid></article_grid>
+    </div>
+
+    <!-- second img grid -->
+    <div>
+      <second_img_grid></second_img_grid>
+    </div>
+
   </div>
 </template>
 <script>
-import warnning from '@/components/warrning.vue'
-import app_header from '@/components/header/index.vue'
-import img_grids from '@/components/img_grid'
-import single_card from '@/components/commerce_components/products_grid/index.vue'
-import app_footer from'@/components/footer'
+import image_grid from "@/components/img_grid";
+import product_grid from "@/components/commerce_components/products_grid";
+import second_img_grid from "@/components/second_img_grid"
+import comments_grid from "@/components/comments_grid";
+import article_grid from "@/components/article_grid";
+
 export default {
-  components :{ 
-    warnning,
-    app_header,
-    img_grids,
-    single_card,
-    app_footer,
+  data() {
+    return {
+      samples: {},
+      blogs: {}
+    }
+  },
+  components: {
+    image_grid,
+    product_grid,
+    second_img_grid,
+    comments_grid,
+    article_grid
+  },
+  mounted() {
+    // get samples 
+    this.$axios.get('/sample')
+      .then(response => {
+        this.samples = response.data
+        console.log(this.samples)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+
+    // get blogs 
+    this.$axios.get('/article')
+      .then(response => {
+        this.blogs = response.data
+        console.log(this.blogs)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  },
+  methods: {
+    show_article(id) {
+      this.$router.push('/article/' + id)
+    },
+
+    show_sample(id) {
+      this.$router.push('/sample/' + id)
+    }
   }
-}
+};
 </script>
-<style></style>
+<style>
+.progess_div {
+  margin: auto;
+  width: 70%;
+  height: 30px;
+  position: relative;
+}
+
+.progess_label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-inline: 20px;
+  align-self: center;
+  position: absolute;
+  color: white;
+}
+
+.about_me {
+  text-align: justify;
+}
+
+.slide-nav {
+  /* box-shadow: 0px 0px 5px #198754; */
+}
+
+.topic {
+  /* box-shadow: 0px 0px 5px #198754; */
+}
+</style>

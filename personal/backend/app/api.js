@@ -1,17 +1,9 @@
-// api router file
-const api_router = require('express').Router();
-var article_arey = require('./data/article');
-var sample_arey = require('./data/sample')
-const controller = require('./controller')
+const controller = require('./controller');
+const router = require('express').Router();
+router.get('/article', (req, res) => controller.article_controller.get_all_articles(req, res))
+router.get('/article/:id', (req, res) => controller.article_controller.get_article_by_id(req, res))
 
-api_router.get('/', (req, res)=>{
-    res.json({
-        answer: "this is api res",
-    })
-})
-api_router.get('/sample', (req, res) => controller.sample_controller.get_all_samples(req, res))
-api_router.get('/sample/:id', (req, res) => controller.sample_controller.get_sample_by_id(req, res))
-api_router.get('/article', (req, res)=> controller.article_controller.get_all_articles(req, res))
-api_router.get('/article/:id', (req, res)=> controller.article_controller.get_article_by_id(req, res))
+router.get('/sample', (req, res) => controller.sample_controller.get_all_samples(req, res))
+router.get('/sample/:id', (req, res) => controller.sample_controller.get_sample_by_id(req, res))
 
-module.exports = api_router;
+module.exports = router;

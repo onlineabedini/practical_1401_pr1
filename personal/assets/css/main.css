@@ -1,4 +1,32 @@
-body{
+@font-face {
+    font-family: 'lalezar';
+    src: url('@/assets/fonts/Lalezar.ttf');
+}
+
+body {
     background-color: white;
     direction: rtl;
+    font-family: 'lalezar';
+}
+
+.border {
+    border: 1px solid #007964 !important;
+    border-radius: 10px;
+}
+
+img {
+    border: 1px solid #00796540 !important;
+    border-radius: 10px;
+}
+
+div {
+    border-radius: 20px;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.btn {
+    border-radius: 20px;
 }

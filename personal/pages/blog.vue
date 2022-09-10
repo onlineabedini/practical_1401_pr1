@@ -1,74 +1,53 @@
 <template>
-
-<div class="p-5 cards border">
-    <div class="text-center">
-      <h3>
-        <p class="fw-bold" style="font-family:Verdana">وبلاگ</p>
-        <hr />
-        نوشته‌های مرا در اینستاگرم، توییتر وشبکه‌های اجتماعی دیگر دنبال کنید.
-        <hr />
-      </h3>
-    </div>
-    <!-- ............................................ -->
-
-  <div class="row row-cols-4 m-5 p-5">
-    <div class="col" v-for="card in cardsList" :key="card.id">
-      <cardBlog
-        :cardImage="card.cardImage"
-        :cardTitle="card.cardTitle"
-        :description="card.description"
-      ></cardBlog>
+  <div>
+    <div class="main_div">
+      <h1>وبلاگ</h1>
+      <hr />
+      <h5>
+        نوشته های مرا در اینستاگرام، توییتر و شبکه های اجتماعی دیگر دنبال کنید
+      </h5>
+      <hr>
+      <div class="row my-5">
+        <div class="col-12 col-md-3 my-2" v-for="blog in blogs" :key="blog.name">
+          <blog_card :img_url="blog.img_url" :title="blog.title" :description="blog.description">
+          </blog_card>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </template>
-
 <script>
-import cardBlog from "~/components/cards/cardBlog.vue";
+import blog_card from '@/components/cards/blog_card'
+
 export default {
-  layout() {
-    return "cardBlog";
-  },
+  layout: "pages",
   components: {
-    cardBlog,
+    blog_card
   },
   data() {
     return {
-      cardsList: {
-        card1: {
-          cardImage: "img/1.jpg",
-          cardTitle: "Card title",
-          description: "example description 1",
-        },
-        card2: {
-          cardImage: "img/2.jpg",
-          cardTitle: "Card title",
-          description: "example description 2",
-        },
-        card3: {
-          cardImage: "img/3.jpg",
-          cardTitle: "Card title",
-          description: "example description 3",
-        },
-        card4: {
-          cardImage: "img/4.jpg",
-          cardTitle: "Card title",
-          description: "example description 4",
-        },
-      },
-    };
+      blogs: {}
+    }
   },
-};
+  mounted() {
+    // get blogs 
+    this.$axios.get('/article')
+      .then(response => {
+        this.blogs = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+}
 </script>
+<style scoped>
+.main_div {
+  text-align: center;
+}
 
-<style>
 hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 25%;
-  margin-right: 25%;
-  border-style: inset;
-  border-width: 1px;
+  width: 70%;
+  margin: auto;
 }
 </style>

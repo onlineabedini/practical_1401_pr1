@@ -1,0 +1,40 @@
+/* main template styles */
+
+/* @font-face {
+    font-family: 'lalezar';
+    src: url('@/assets/fonts/Lalezar.ttf');
+} */
+
+body {
+    background-color: white;
+    direction: rtl;
+    /* font-family: 'lalezar'; */
+}
+
+div {
+    /* border: 1px solid rgba(125, 125, 125, 0.321); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*  */
+}
+
+p {
+    font-size: 1em;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.344);
+    display: inline-block;
+    align-self: center;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

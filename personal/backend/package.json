@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "irnode_cp": "^1.0.0",
+    "mongoose": "^6.3.3",
     "nodemon": "^2.0.15"
   }
 }
