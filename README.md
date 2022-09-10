@@ -1,57 +1,21 @@
-# practical_group_1401_1
-All the projects related to the first group of 1401 are here
+# practical_1401_pr1
 ```
 | backend => node js
-| frontend => nuxtjs
+| frontend => nuxtjs v2
 ```
-
-**GIT**
-
-*clone*
-```
-git clone https://github.com/onlineabedini/practical_group_1401_1.git
-```
-
-*pull*
-```
-git pull
-```
-
-*push*
-```
-git add .
-```
-```
-git commit -m " what did you do? "
-```
-```
-git push
-```
-
-*undo changes*
-```
-git checkout -- .
-```
-
-## how to start?
-step1 : install nodejs and vuecli and nuxtcli
-step2 : install git 
-step3 : clone project
-step4 : run applications using following commands: 
-
 
 **install dependencies:**
 ```
 npm install
 ```
 
-**nodejs app**
+**backend**
 ```
-npm start
+npm run backend
 ```
 
-**nuxtjs**
+**front**
 ```
-npm run dev
+npm run backend
 ```
 
